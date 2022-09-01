@@ -1,0 +1,85 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: rgb(14, 24, 35);
+  background: radial-gradient(
+    circle,
+    rgba(14, 24, 35, 1) 65%,
+    rgba(2, 0, 36, 1) 100%
+  );
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.agents-container {
+    margin-top: 100px;
+    background-color: aqua;
+}
+
+.agents-container-row1,
+.agents-container-row2,
+.agents-container-row3 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.agents-container-row1 img:hover,
+.agents-container-row2 img:hover,
+.agents-container-row3 img:hover {
+  transform: scale(1.1);
+  -webkit-filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px -2px 0 white);
+  filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px -2px 0 white);
+}
+
+.agents-container-row1 {
+  width: 85%;
+}
+
+.agents-container-row1 img {
+  width: 230px;
+  z-index: 1;
+  transition: all 0.1s ease-in-out;
+}
+
+.agents-container-row1 img:hover {
+  z-index: 2;
+}
+
+.agents-container-row2 {
+  top: 150px;
+  width: 60%;
+}
+
+.agents-container-row2 img {
+  width: 250px;
+  z-index: 3;
+  transition: all 0.1s ease-in-out;
+}
+
+.agents-container-row2 img:hover {
+  transform: scale(1.1);
+  z-index: 4;
+}
+
+.agents-container-row3 {
+  top: 325px;
+  width: 85%;
+}
+
+.agents-container-row3 img {
+  width: 230px;
+  z-index: 5;
+  transition: all 0.1s ease-in-out;
+}
+
+.agents-container-row3 img:hover {
+  transform: scale(1.1);
+  z-index: 5;
+}
