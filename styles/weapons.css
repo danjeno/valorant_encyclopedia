@@ -8,16 +8,18 @@ body {
   height: 100%;
   margin: 0;
 }
-.container {
-  height: 100%;
-  margin: 0;
-}
 
 .container {
+  height: 100%;
+  margin: auto 0;
+  max-width: 1000px;
+  padding-top: 30px;
+  grid-auto-rows: auto;
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
+  gap: 2% 2%;
   grid-auto-flow: row;
   grid-template-areas:
     "SIDEARMS SMGS SHOTGUNS SNIPER-RIFLES"
@@ -26,6 +28,10 @@ body {
     "FRENZY RIFLES RIFLES MACHINE-GUNS"
     "GHOST BULLDOG GUARDIAN ARES"
     "SHERIFF PHANTOM VANDAL ODIN";
+}
+
+.container * {
+  border: 1px solid red; /* for debugging */
 }
 
 .SIDEARMS {
@@ -289,10 +295,85 @@ body {
   display: block;
 }
 
-.marshall-img {
+.marshal-img {
   width: 50%;
   height: auto;
 
+  justify-self: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  margin: auto;
+  display: block;
+}
+
+.operator-img {
+  width: 50%;
+  height: auto;
+
+  justify-self: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  margin: auto;
+  display: block;
+}
+
+.ares-img {
+  width: 50%;
+  height: auto;
+
+  justify-self: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  margin: auto;
+  display: block;
+}
+
+.odin-img {
+  justify-self: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  margin: auto;
+  display: block;
+}
+
+.bulldog-img {
+  width: 50%;
+  height: auto;
+
+  justify-self: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  margin: auto;
+  display: block;
+}
+
+.guardian-img {
+  width: 50%;
+  height: auto;
+
+  justify-self: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  margin: auto;
+  display: block;
+}
+
+.phantom-img {
+  justify-self: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  margin: auto;
+  display: block;
+}
+
+.vandal-img {
   justify-self: center;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
