@@ -1,9 +1,302 @@
-.layout {
-  width: 1366px;
-  height: 768px;
+html {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: "Oswald", sans-serif;
 
+  height: 100%;
+  margin: 0;
+}
+.container {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
   display: grid;
-  grid-template-rows: repeat(auto-fit, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "SIDEARMS SMGS SHOTGUNS SNIPER-RIFLES"
+    "CLASSIC STINGER BUCKY MARSHAL"
+    "SHORTY SPECTRE JUDGE OPERATOR"
+    "FRENZY RIFLES RIFLES MACHINE-GUNS"
+    "GHOST BULLDOG GUARDIAN ARES"
+    "SHERIFF PHANTOM VANDAL ODIN";
+}
+
+.SIDEARMS {
+  grid-area: SIDEARMS;
+  display: flex;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.CLASSIC {
+  grid-area: CLASSIC;
+  display: flex;
+  justify-content: center;
+}
+
+.SHORTY {
+  grid-area: SHORTY;
+  display: flex;
+  justify-content: center;
+}
+
+.FRENZY {
+  grid-area: FRENZY;
+  display: flex;
+  justify-content: center;
+}
+
+.GHOST {
+  grid-area: GHOST;
+  display: flex;
+  justify-content: center;
+}
+
+.SHERIFF {
+  grid-area: SHERIFF;
+  display: flex;
+  justify-content: center;
+}
+
+.SMGS {
+  grid-area: SMGS;
+  display: flex;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.STINGER {
+  grid-area: STINGER;
+  display: flex;
+  justify-content: center;
+}
+
+.SPECTRE {
+  grid-area: SPECTRE;
+  display: flex;
+  justify-content: center;
+}
+
+.SHOTGUNS {
+  grid-area: SHOTGUNS;
+  display: flex;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.BUCKY {
+  grid-area: BUCKY;
+  display: flex;
+  justify-content: center;
+}
+
+.JUDGE {
+  grid-area: JUDGE;
+  display: flex;
+  justify-content: center;
+}
+
+.SNIPER-RIFLES {
+  grid-area: SNIPER-RIFLES;
+  display: flex;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.MARSHAL {
+  grid-area: MARSHAL;
+  display: flex;
+  justify-content: center;
+}
+
+.OPERATOR {
+  grid-area: OPERATOR;
+  display: flex;
+  justify-content: center;
+}
+
+.MACHINE-GUNS {
+  grid-area: MACHINE-GUNS;
+  display: flex;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.ARES {
+  grid-area: ARES;
+  display: flex;
+  justify-content: center;
+}
+
+.ODIN {
+  grid-area: ODIN;
+  display: flex;
+  justify-content: center;
+}
+
+.RIFLES {
+  grid-area: RIFLES;
+  display: flex;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.BULLDOG {
+  grid-area: BULLDOG;
+  display: flex;
+  justify-content: center;
+}
+
+.GUARDIAN {
+  grid-area: GUARDIAN;
+  display: flex;
+  justify-content: center;
+}
+
+.PHANTOM {
+  grid-area: PHANTOM;
+  display: flex;
+  justify-content: center;
+}
+
+.VANDAL {
+  grid-area: VANDAL;
+  display: flex;
+  justify-content: center;
+}
+
+.classic-img {
+  width: 50%;
+  height: auto;
+
+  justify-self: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  margin: auto;
+  display: block;
+}
+
+.shorty-img {
+  width: 50%;
+  height: auto;
+
+  justify-self: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  margin: auto;
+  display: block;
+}
+
+.frenzy-img {
+  justify-self: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  margin: auto;
+  display: block;
+}
+
+.ghost-img {
+  width: 50%;
+  height: auto;
+
+  justify-self: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  margin: auto;
+  display: block;
+}
+
+.sheriff-img {
+  width: 50%;
+  height: auto;
+
+  justify-self: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  margin: auto;
+  display: block;
+}
+
+.stinger-img {
+  width: 50%;
+  height: auto;
+
+  justify-self: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  margin: auto;
+  display: block;
+}
+
+.spectre-img {
+  width: 50%;
+  height: auto;
+
+  justify-self: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  margin: auto;
+  display: block;
+}
+
+.bucky-img {
+  width: 50%;
+  height: auto;
+
+  justify-self: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  margin: auto;
+  display: block;
+}
+
+.judge-img {
+  width: 50%;
+  height: auto;
+
+  justify-self: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  margin: auto;
+  display: block;
+}
+
+.marshall-img {
+  width: 50%;
+  height: auto;
+
+  justify-self: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  margin: auto;
+  display: block;
 }
