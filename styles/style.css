@@ -126,13 +126,19 @@ header {
     padding: 25px;
   }
 
-  #video {
+  #My-video {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
   }
+
+  #My-video:hover {
+     cursor:pointer;  
+}
+
+.vjs-control-bar { display:none!important; }
 
 #languages {
     font-family: 'Oswald', sans-serif;
@@ -141,4 +147,13 @@ header {
     font-size: 18px;
     cursor: pointer;
     padding: 0 5px;
+}
+
+
+/*************************
+INFO SECTION
+*************************/
+
+#info-blog {
+position: fixed;
 }
