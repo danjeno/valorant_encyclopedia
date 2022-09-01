@@ -1,4 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Alumni Sans Pinstripe',  sans-serif;
     font-family: 'Oswald', sans-serif;
 }
+
+
+/*************************
+HEADER SECTION
+*************************/
+
+header { 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  #header-headline {
+    margin-top: 20px;
+    margin-left: 8.33%;
+    background: #fff;
+    padding: 10px;
+    max-width: 17%;
+  }
+  
+ 
+  
+  #logo-text {
+    float: left;
+  }
+  
+  #logo-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  #main-nav {
+    float: right;
+    list-style: none;
+  }
+  
+  #main-nav li {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 1em;
+  }
+  #main-nav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #171717;
+  }
+  
+  #main-nav li a:link,
+  #main-nav li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #171717;
+    opacity: 0.7;
+  }
+  #main-nav li a:hover,
+  #main-nav li a:active {
+    opacity: 1;
+  }
+  
+  #sticky-nav #main-nav li a:hover,
+  #sticky-nav #main-nav li a:active {
+    opacity: 1;
+    border-bottom: 2px solid #171717;
+    transition: 0.3s;
+  }
+  
+  #sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 999;
+    box-shadow: 0 2px 2px #eae3e3;
+  }
+  
+  #sticky-nav #logo-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  #sticky-nav #main-nav li a:link,
+  #sticky-nav #main-nav li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #171717;
+    opacity: 0.7s;
+    transition: opacity 0.5s;
+  }
+  
+  #sticky-nav #logo-text {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #171717;
+    letter-spacing: 6px;
+    padding-left: 25px;
+    margin-left: 30px;
+  }
+  
+  #logo-text  {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #171717;
+    letter-spacing: 8px;
+    padding-left: 30px;
+    margin-left: 50px;
+  }
+  
+  nav {
+    background: #fff;
+    padding: 25px;
+  }
