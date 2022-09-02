@@ -7,377 +7,371 @@ body {
 
   height: 100%;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(45, 61, 78);
 }
 
-.container {
+.content-wrapper {
+  margin: 0 auto; /* margin: 0 auto; */
+  max-width: 1200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.weapon-card {
+  border: 0px solid aqua;
+  margin: 0.5rem;
+  position: relative;
+  height: 12rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  flex: 1;
+  min-width: 320px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+
+@media (min-width: 900px) {
+  .weapon-card {
+    height: 20rem;
+  }
+}
+
+.weapon-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  margin: auto 0;
-  max-width: 1000px;
-  padding-top: 30px;
-  grid-auto-rows: auto;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 2% 2%;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "SIDEARMS SMGS SHOTGUNS SNIPER-RIFLES"
-    "CLASSIC STINGER BUCKY MARSHAL"
-    "SHORTY SPECTRE JUDGE OPERATOR"
-    "FRENZY RIFLES RIFLES MACHINE-GUNS"
-    "GHOST BULLDOG GUARDIAN ARES"
-    "SHERIFF PHANTOM VANDAL ODIN";
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%);
+  z-index: 0;
 }
 
-.container * {
-  border: 1px solid red; /* for debugging */
+.weapon-card__card-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /*     background: rgba(255,0,0,.5); */
 }
 
-.SIDEARMS {
-  grid-area: SIDEARMS;
+.weapon-card__image {
+  width: 100%;
+  height: 50%;
+  display: block;
+  object-fit: cover;
+  transition: transform 1s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  z-index: -1;
+}
+
+.weapon-card__text-wrapper {
+  position: absolute;
+  bottom: 0rem;
+  padding: 1rem;
+  color: white;
+  /*     background-color: rgba(0, 0, 0, 0.4); */
+  transition: background-color 1.5s ease;
+}
+
+.weapon-card__title {
+  transition: color 1s ease;
+  margin-bottom: 0.5rem;
+}
+
+.weapon-card__post-date {
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+.weapon-card__details-wrapper {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 1.5s ease, opacity 1s ease;
+}
+
+@media (min-width: 900px) {
+  .weapon-card:hover .weapon-card__details-wrapper {
+    max-height: 20rem;
+    opacity: 1;
+  }
+  .weapon-card:hover .weapon-card__text-wrapper {
+    /* background-color: rgba(0, 0, 0, 0.6); */
+  }
+  .weapon-card:hover .weapon-card__title {
+    color: rgb(117, 245, 191);
+  }
+  .weapon-card:hover .weapon-card__image {
+    transform: scale(1.2);
+    z-index: -1;
+  }
+}
+
+.weapon-card__excerpt {
+  font-weight: 300;
+}
+
+.weapon-card__read-more {
+  background: black;
+  color: #bbb;
+  display: block;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  border: 1px solid #444;
+  font-size: 0.8rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-decoration: none;
+  width: 7rem;
+  margin-left: auto;
+  position: relative;
+  z-index: 5;
+}
+
+.weapon-card__read-more i {
+  position: relative;
+  left: 0.2rem;
+  color: #888;
+  transition: left 0.5s ease, color 0.6s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.r-title {
+  margin-top: var(--rTitleMarginTop, 0) !important;
+  margin-bottom: var(--rTitleMarginBottom, 0) !important;
+}
+
+/* 
+helper to hide elements that are available only for screen readers. 
+*/
+
+.screen-reader {
+  width: var(--screenReaderWidth, 1px) !important;
+  height: var(--screenReaderHeight, 1px) !important;
+  padding: var(--screenReaderPadding, 0) !important;
+  border: var(--screenReaderBorder, none) !important;
+
+  position: var(--screenReaderPosition, absolute) !important;
+  clip: var(--screenReaderClip, rect(1px, 1px, 1px, 1px)) !important;
+  overflow: var(--screenReaderOverflow, hidden) !important;
+}
+
+/*
+=====
+POPUP
+=====
+*/
+
+/*
+1. Creating the top and bottom gaps for the modal so that content doesn't touches window's edges
+*/
+
+.popup:not(:target) {
+  display: none;
+}
+
+.popup:target {
+  width: 100%;
+  height: 100vh;
+
   display: flex;
-  justify-content: center;
 
-  font-weight: bold;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.popup::before {
+  content: "";
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgb(14, 24, 35);
+
+  position: fixed;
+  left: 0;
+  top: 50%;
+}
+
+.popup::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: black;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+}
+
+.popup__container {
+  box-sizing: border-box;
+  padding: 5% 15%;
+  color: white;
+
+  height: calc(100vh - 40px); /* 1 */
+  margin: auto; /* 1 */
+  overflow: auto; /* 1 */
+  overscroll-behavior: contain; /* 1 */
+}
+
+.popup__title {
+  --rTitleMarginBottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.popup__close {
+  width: 2rem;
+  height: 2rem;
+
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE5IDYuNDFMMTcuNTkgNSAxMiAxMC41OSA2LjQxIDUgNSA2LjQxIDEwLjU5IDEyIDUgMTcuNTkgNi40MSAxOSAxMiAxMy40MSAxNy41OSAxOSAxOSAxNy41OSAxMy40MSAxMnoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
+}
+
+/*
+animation
+*/
+
+.popup::before {
+  will-change: height, top;
+  animation: open-animation 0.6s cubic-bezier(0.83, 0.04, 0, 1.16) 0.65s both;
+}
+
+.popup::after {
+  will-change: width, opacity;
+  animation: line-animation 0.6s cubic-bezier(0.83, 0.04, 0, 1.16) both;
+}
+
+@keyframes line-animation {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  99% {
+    width: 100%;
+    opacity: 1;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes open-animation {
+  0% {
+    height: 0;
+    top: 50%;
+  }
+
+  100% {
+    height: 100vh;
+    top: 0;
+  }
+}
+
+.popup__container {
+  animation: fade 0.5s ease-out 1.3s both;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.info-card {
+  width: 800px;
+  /* border: 3px #e2e2e2 solid; */
+  border-radius: 8px;
+  padding: 25px;
+}
+/* .info-card .info {
+  
+} */
+.info-card .info h3 {
+  display: block;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.info-card .info .info-item .summary {
+  position: relative;
+  height: 80px;
+}
+.info-card .info .info-item .summary .title {
   font-size: 32px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
-
-.CLASSIC {
-  grid-area: CLASSIC;
-  display: flex;
-  justify-content: center;
-}
-
-.SHORTY {
-  grid-area: SHORTY;
-  display: flex;
-  justify-content: center;
-}
-
-.FRENZY {
-  grid-area: FRENZY;
-  display: flex;
-  justify-content: center;
-}
-
-.GHOST {
-  grid-area: GHOST;
-  display: flex;
-  justify-content: center;
-}
-
-.SHERIFF {
-  grid-area: SHERIFF;
-  display: flex;
-  justify-content: center;
-}
-
-.SMGS {
-  grid-area: SMGS;
-  display: flex;
-  justify-content: center;
-
-  font-weight: bold;
+.info-card .info .info-item .summary .value {
   font-size: 32px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.info-card .info .info-item .slider {
+  height: 5px;
+  background-color: #e2e2e2;
+  margin-top: 8px;
+  position: relative;
+}
+.info-card .info .info-item .slider .progress {
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: inline-block;
+  background-color: #da5a4e;
+  animation: slide 3s ease-in-out;
+  transform-origin: left top;
 }
 
-.STINGER {
-  grid-area: STINGER;
-  display: flex;
-  justify-content: center;
+.progress#fire-rate {
+  width: 0%;
+}
+.progress#run-speed {
+  width: 0%;
+}
+.progress#reload-speed {
+  width: 0%;
+}
+.progress#magazine {
+  width: 0%;
 }
 
-.SPECTRE {
-  grid-area: SPECTRE;
-  display: flex;
-  justify-content: center;
-}
-
-.SHOTGUNS {
-  grid-area: SHOTGUNS;
-  display: flex;
-  justify-content: center;
-
-  font-weight: bold;
-  font-size: 32px;
-}
-
-.BUCKY {
-  grid-area: BUCKY;
-  display: flex;
-  justify-content: center;
-}
-
-.JUDGE {
-  grid-area: JUDGE;
-  display: flex;
-  justify-content: center;
-}
-
-.SNIPER-RIFLES {
-  grid-area: SNIPER-RIFLES;
-  display: flex;
-  justify-content: center;
-
-  font-weight: bold;
-  font-size: 32px;
-}
-
-.MARSHAL {
-  grid-area: MARSHAL;
-  display: flex;
-  justify-content: center;
-}
-
-.OPERATOR {
-  grid-area: OPERATOR;
-  display: flex;
-  justify-content: center;
-}
-
-.MACHINE-GUNS {
-  grid-area: MACHINE-GUNS;
-  display: flex;
-  justify-content: center;
-
-  font-weight: bold;
-  font-size: 32px;
-}
-
-.ARES {
-  grid-area: ARES;
-  display: flex;
-  justify-content: center;
-}
-
-.ODIN {
-  grid-area: ODIN;
-  display: flex;
-  justify-content: center;
-}
-
-.RIFLES {
-  grid-area: RIFLES;
-  display: flex;
-  justify-content: center;
-
-  font-weight: bold;
-  font-size: 32px;
-}
-
-.BULLDOG {
-  grid-area: BULLDOG;
-  display: flex;
-  justify-content: center;
-}
-
-.GUARDIAN {
-  grid-area: GUARDIAN;
-  display: flex;
-  justify-content: center;
-}
-
-.PHANTOM {
-  grid-area: PHANTOM;
-  display: flex;
-  justify-content: center;
-}
-
-.VANDAL {
-  grid-area: VANDAL;
-  display: flex;
-  justify-content: center;
-}
-
-.classic-img {
-  width: 50%;
-  height: auto;
-
-  justify-self: center;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-
-  margin: auto;
-  display: block;
-}
-
-.shorty-img {
-  width: 50%;
-  height: auto;
-
-  justify-self: center;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-
-  margin: auto;
-  display: block;
-}
-
-.frenzy-img {
-  justify-self: center;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-
-  margin: auto;
-  display: block;
-}
-
-.ghost-img {
-  width: 50%;
-  height: auto;
-
-  justify-self: center;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-
-  margin: auto;
-  display: block;
-}
-
-.sheriff-img {
-  width: 50%;
-  height: auto;
-
-  justify-self: center;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-
-  margin: auto;
-  display: block;
-}
-
-.stinger-img {
-  width: 50%;
-  height: auto;
-
-  justify-self: center;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-
-  margin: auto;
-  display: block;
-}
-
-.spectre-img {
-  width: 50%;
-  height: auto;
-
-  justify-self: center;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-
-  margin: auto;
-  display: block;
-}
-
-.bucky-img {
-  width: 50%;
-  height: auto;
-
-  justify-self: center;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-
-  margin: auto;
-  display: block;
-}
-
-.judge-img {
-  width: 50%;
-  height: auto;
-
-  justify-self: center;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-
-  margin: auto;
-  display: block;
-}
-
-.marshal-img {
-  width: 50%;
-  height: auto;
-
-  justify-self: center;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-
-  margin: auto;
-  display: block;
-}
-
-.operator-img {
-  width: 50%;
-  height: auto;
-
-  justify-self: center;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-
-  margin: auto;
-  display: block;
-}
-
-.ares-img {
-  width: 50%;
-  height: auto;
-
-  justify-self: center;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-
-  margin: auto;
-  display: block;
-}
-
-.odin-img {
-  justify-self: center;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-
-  margin: auto;
-  display: block;
-}
-
-.bulldog-img {
-  width: 50%;
-  height: auto;
-
-  justify-self: center;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-
-  margin: auto;
-  display: block;
-}
-
-.guardian-img {
-  width: 50%;
-  height: auto;
-
-  justify-self: center;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-
-  margin: auto;
-  display: block;
-}
-
-.phantom-img {
-  justify-self: center;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-
-  margin: auto;
-  display: block;
-}
-
-.vandal-img {
-  justify-self: center;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-
-  margin: auto;
-  display: block;
+@keyframes slide {
+  from {
+    transform: scale(0, 1);
+  }
+  to {
+    transform: scale(1, 1);
+  }
 }
