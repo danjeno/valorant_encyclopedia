@@ -9,15 +9,26 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+html,body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
 
 /*************************
 HEADER SECTION
 *************************/
 
 header { 
+    height: 100vh;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    /* position: relative;
+    padding-bottom: 56.25%; */
   }
   
   #header-headline {
@@ -127,11 +138,13 @@ header {
   }
 
   #My-video {
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
   }
 
   #My-video:hover {
@@ -149,7 +162,40 @@ header {
     padding: 0 5px;
 }
 
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.intro-title  {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  opacity: 0.8;
+  cursor: default ;
+}
+
+.intro-logo {
+  text-align: center;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  opacity: 0.5;
+}
 /*************************
 INFO SECTION
 *************************/
