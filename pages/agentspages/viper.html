@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agents</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/agents.css" />
+  </head>
+  <body>
+    <section id="banner">
+        <div class="banner-text">
+            <h1>AGENTS</h1>
+            <p>Find more ways to plant the Spike and style on your enemies with scrappers, strategists, and hunters of every description.</p>
+        </div>
+    </section>
+    <section id="agents-info2">
+        <div class="astra-page">
+        <div class="agent-info">
+            <div class="agent-picture">
+                <h1>VIPER</h1>
+                <img class="agent" src="/pictures/agents/viper.png" alt="viper">
+            </div>
+            <div class="bio-skills">
+                <h1>ABOUT</h1>
+                <p>The American chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and cripple the enemy's vision. If the toxins don't kill her prey, her mind games surely will.</p>
+                <h1>SPECIAL SKILLS</h1>
+                <div class="skills">
+                    <img src="/pictures/agents/skills/viper/viper-q.png" alt="viper-q" onmouseover="show_div('q-description')" onmouseout="hide_div('q-description')" onclick="show_video('q-video')">
+                    <img src="/pictures/agents/skills/viper/viper-w.png" alt="viper-w" onmouseover="show_div('w-description')" onmouseout="hide_div('w-description')" onclick="show_video('w-video')"> 
+                    <img src="/pictures/agents/skills/viper/viper-e.png" alt="viper-e" onmouseover="show_div('e-description')" onmouseout="hide_div('e-description')" onclick="show_video('e-video')">
+                    <img src="/pictures/agents/skills/viper/viper-r.png" alt="viper-r" onmouseover="show_div('r-description')" onmouseout="hide_div('r-description')" onclick="show_video('r-video')">
+                </div>
+                <div class="skills-description">
+                <div id="q-description">
+                <h2>Q - POISON CLOUD</h2>
+                <p>EQUIP a gas emitter. FIRE to throw the emitter that perpetually remains throughout the round. RE-USE the ability to create a toxic gas cloud at the cost of fuel. </p>
+                </div>
+                <div id="w-description">
+                <h2>E - TOXIC SCREEN</h2>
+                <p>EQUIP a gas emitter launcher. FIRE to deploy a long line of gas emitters. RE-USE the ability to create a tall wall of toxic gas at the cost of fuel. This ability can be RE-USED more than once.</p>
+                </div>
+                <div id="e-description">
+                <h2>C - SNAKE BITE</h2>
+                <p>EQUIP a chemical launcher. FIRE to launch a canister that shatters upon hitting the floor, creating a lingering chemical zone that damages and slows enemies.</p>
+                </div>
+                <div id="r-description">
+                <h2>X - VIPER’S PIT</h2>
+                <p>EQUIP a chemical sprayer. FIRE to spray a chemical cloud in all directions around Viper, creating a large cloud that reduces the vision range and maximum health of players inside of it.</p>
+                </div>
+                </div>
+            </div>
+            <div id="video-container">
+                <video  autoplay muted loop id="q-video">
+                    <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blte5200bab40679f96/5ecad8935e73766852c8ed94/Viper_Q_v001_web.mp4" type="video/mp4">
+                </video>
+                <video  autoplay muted loop id="w-video">
+                    <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt66a45c1fe76ca647/5ecad893957e405e0990575d/Viper_E_v001_web.mp4" type="video/mp4">
+                </video>
+                <video  autoplay muted loop id="e-video">
+                    <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt5e70987e8ac2f2d6/5ecad893722d20585b2f4a4c/Viper_C_v001_web.mp4" type="video/mp4">
+                </video>
+                <video  autoplay muted loop id="r-video">
+                    <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt41c75111b2eac6b5/5ecad8923a450a58554b7078/Viper_X_v001_web.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        
+    </div>
+    </section>
+    <div id="main-container">
+    <section id="agents-list">
+        <div class="row-1">
+            <div class="agent-class">
+                <h2>CONTROLLERS</h2>
+                <img src="/pictures/agents/icons/Controller.png" alt="Controller">
+                <p>Controllers are experts in slicing up dangerous territory to set their team up for success.</p>
+            </div>
+            <a href="astra.html"><img class="agent-icon" src="/pictures/agents/icons/Astra_icon.png" alt="Astra_icon"></a>
+            <a href="brimstone.html"><img class="agent-icon" src="/pictures/agents/icons/Brimstone_icon.png" alt="Brimstone_icon"></a>
+            <a href="omen.html"><img class="agent-icon" src="/pictures/agents/icons/Omen_icon.png" alt="Omen_icon"></a>
+            <a href="viper.html"><img class="agent-icon" src="/pictures/agents/icons/Viper_icon.png" alt="Viper_icon"></a>
+        </div>
+        <div class="row-1">
+            <div class="agent-class">
+                <h2>DUELISTS</h2>
+                <img src="/pictures/agents/icons/Duelist.png" alt="Duelist">
+                <p>Duelists are self-sufficient fraggers who their team expects, through abilities and skills, to get high frags and seek out engagements first.</p>
+            </div>
+            <a href="jett.html"><img class="agent-icon" src="/pictures/agents/icons/Jett_icon.png" alt="Jett_icon"></a>
+            <a href="neon.html"><img class="agent-icon" src="/pictures/agents/icons/Neon_icon.png" alt="Neon_icon"></a>
+            <a href="phoenix.html"><img class="agent-icon" src="/pictures/agents/icons/Phoenix_icon.png" alt="Phoenix_icon"></a>
+            <a href="raze.html"><img class="agent-icon" src="/pictures/agents/icons/Raze_icon.png" alt="Raze_icon"></a>
+            <a href="reyna.html"><img class="agent-icon" src="/pictures/agents/icons/Reyna_icon.png" alt="Reyna_icon"></a>
+            <a href="yoru.html"><img class="agent-icon" src="/pictures/agents/icons/Yoru_icon.png" alt="Yoru_icon"></a>
+        </div>
+        <div class="row-1">
+            <div class="agent-class">
+                <h2>INITIATORS</h2>
+                <img src="/pictures/agents/icons/Initiator.png" alt="Initiator">
+                <p>Initiators challenge angles by setting up their team to enter contested ground and push defenders away.</p>
+            </div>
+            <a href="breach.html"><img class="agent-icon" src="/pictures/agents/icons/Breach_icon.png" alt="Breach_icon"></a>
+            <a href="fade.html"><img class="agent-icon" src="/pictures/agents/icons/Fade_icon.png" alt="Fade_icon"></a>
+            <a href="kayo.html"><img class="agent-icon" src="/pictures/agents/icons/KAYO_icon.png" alt="KAYO_icon"></a>
+            <a href="skye.html"><img class="agent-icon" src="/pictures/agents/icons/Skye_icon.png" alt="Skye_icon"></a>
+            <a href="sova.html"><img class="agent-icon" src="/pictures/agents/icons/Sova_icon.png" alt="Sova_icon"></a>
+        </div>
+        <div class="row-1">
+            <div class="agent-class">
+                <h2>SENTINELS</h2>
+                <img src="/pictures/agents/icons/Sentinel.png" alt="Sentinel">
+                <p>Sentinels are defensive experts who can lock down areas and watch flanks, both on attacker and defender rounds.</p>
+            </div>
+            <a href="chamber.html"><img class="agent-icon" src="/pictures/agents/icons/Chamber_icon.png" alt="Chamber_icon"></a>
+            <a href="cypher.html"><img class="agent-icon" src="/pictures/agents/icons/Cypher_icon.png" alt="Cypher_icon"></a>
+            <a href="killjoy.html"><img class="agent-icon" src="/pictures/agents/icons/Killjoy_icon.png" alt="Killjoy_icon"></a>
+            <a href="sage.html"><img class="agent-icon" src="/pictures/agents/icons/Sage_icon.png" alt="Sage_icon"></a>
+        </div>
+    </section>
+
+    <img class="background-picture" src="/pictures/agents/valorant.png" alt="">
+
+
+    <script src="/agents.js"></script>
+  </body>
+</html>

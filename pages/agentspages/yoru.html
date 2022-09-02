@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agents</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/agents.css" />
+  </head>
+  <body>
+    <section id="banner">
+        <div class="banner-text">
+            <h1>AGENTS</h1>
+            <p>Find more ways to plant the Spike and style on your enemies with scrappers, strategists, and hunters of every description.</p>
+        </div>
+    </section>
+    <section id="agents-info2">
+        <div class="astra-page">
+        <div class="agent-info">
+            <div class="agent-picture">
+                <h1>YORU</h1>
+                <img class="agent" src="/pictures/agents/yoru.png" alt="yoru">
+            </div>
+            <div class="bio-skills">
+                <h1>ABOUT</h1>
+                <p>Japanese native, Yoru, rips holes straight through reality to infiltrate enemy lines unseen. Using deception and aggression in equal measure, he gets the drop on each target before they know where to look.</p>
+                <h1>SPECIAL SKILLS</h1>
+                <div class="skills">
+                    <img src="/pictures/agents/skills/yoru/yoru-q.png" alt="yoru-q" onmouseover="show_div('q-description')" onmouseout="hide_div('q-description')" onclick="show_video('q-video')">
+                    <img src="/pictures/agents/skills/yoru/yoru-w.png" alt="yoru-w" onmouseover="show_div('w-description')" onmouseout="hide_div('w-description')" onclick="show_video('w-video')"> 
+                    <img src="/pictures/agents/skills/yoru/yoru-e.png" alt="yoru-e" onmouseover="show_div('e-description')" onmouseout="hide_div('e-description')" onclick="show_video('e-video')">
+                    <img src="/pictures/agents/skills/yoru/yoru-r.png" alt="yoru-r" onmouseover="show_div('r-description')" onmouseout="hide_div('r-description')" onclick="show_video('r-video')">
+                </div>
+                <div class="skills-description">
+                <div id="q-description">
+                <h2>Q - BLINDSIDE</h2>
+                <p>EQUIP to rip an unstable dimensional fragment from reality. FIRE to throw the fragment, activating a flash that winds up once it collides with a hard surface in the world</p>
+                </div>
+                <div id="w-description">
+                <h2>E - GATECRASH</h2>
+                <p>EQUIP a rift tether FIRE to send the tether forward ALT FIRE to place a stationary tether ACTIVATE to teleport to the tether's location USE to trigger a fake teleport</p>
+                </div>
+                <div id="e-description">
+                <h2>C - FAKEOUT</h2>
+                <p>EQUIP an echo that transforms into a mirror image of Yoru when activated FIRE to instantly activate the mirror image and send it forward ALT FIRE to place an inactive echo USE to transform an inactive echo into a mirror image and send it forward.</p>
+                </div>
+                <div id="r-description">
+                <h2>X - DIMENSIONAL DRIFT</h2>
+                <p>EQUIP a mask that can see between dimensions. FIRE to drift into Yoru's dimension, unable to be affected or seen by enemies from the outside</p>
+                </div>
+                </div>
+            </div>
+            <div id="video-container">
+                <video  autoplay muted loop id="q-video">
+                    <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt9af4e1e3b962f7b4/5ff77b6fa703d10ab87ebb27/Yoru_Abilities_Blinding_1_1.mp4" type="video/mp4">
+                </video>
+                <video  autoplay muted loop id="w-video">
+                    <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt0945f456a2bcac77/62215a1f47e4d72e3e67ff1a/Website_Yoru_Rework_Gatecrash_v2.mp4" type="video/mp4">
+                </video>
+                <video  autoplay muted loop id="e-video">
+                    <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt47c96a79f14605fc/62215aaed83ad851e8a9e09d/Website_Yoru_Rework_Fakeout_v2.mp4" type="video/mp4">
+                </video>
+                <video  autoplay muted loop id="r-video">
+                    <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt95a89496da772b65/62215bbd6f0333490a0e7bec/Website_Yoru_Rework_Dimensional_Drift_v2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        
+    </div>
+    </section>
+    <div id="main-container">
+    <section id="agents-list">
+        <div class="row-1">
+            <div class="agent-class">
+                <h2>CONTROLLERS</h2>
+                <img src="/pictures/agents/icons/Controller.png" alt="Controller">
+                <p>Controllers are experts in slicing up dangerous territory to set their team up for success.</p>
+            </div>
+            <a href="astra.html"><img class="agent-icon" src="/pictures/agents/icons/Astra_icon.png" alt="Astra_icon"></a>
+            <a href="brimstone.html"><img class="agent-icon" src="/pictures/agents/icons/Brimstone_icon.png" alt="Brimstone_icon"></a>
+            <a href="omen.html"><img class="agent-icon" src="/pictures/agents/icons/Omen_icon.png" alt="Omen_icon"></a>
+            <a href="viper.html"><img class="agent-icon" src="/pictures/agents/icons/Viper_icon.png" alt="Viper_icon"></a>
+        </div>
+        <div class="row-1">
+            <div class="agent-class">
+                <h2>DUELISTS</h2>
+                <img src="/pictures/agents/icons/Duelist.png" alt="Duelist">
+                <p>Duelists are self-sufficient fraggers who their team expects, through abilities and skills, to get high frags and seek out engagements first.</p>
+            </div>
+            <a href="jett.html"><img class="agent-icon" src="/pictures/agents/icons/Jett_icon.png" alt="Jett_icon"></a>
+            <a href="neon.html"><img class="agent-icon" src="/pictures/agents/icons/Neon_icon.png" alt="Neon_icon"></a>
+            <a href="phoenix.html"><img class="agent-icon" src="/pictures/agents/icons/Phoenix_icon.png" alt="Phoenix_icon"></a>
+            <a href="raze.html"><img class="agent-icon" src="/pictures/agents/icons/Raze_icon.png" alt="Raze_icon"></a>
+            <a href="reyna.html"><img class="agent-icon" src="/pictures/agents/icons/Reyna_icon.png" alt="Reyna_icon"></a>
+            <a href="yoru.html"><img class="agent-icon" src="/pictures/agents/icons/Yoru_icon.png" alt="Yoru_icon"></a>
+        </div>
+        <div class="row-1">
+            <div class="agent-class">
+                <h2>INITIATORS</h2>
+                <img src="/pictures/agents/icons/Initiator.png" alt="Initiator">
+                <p>Initiators challenge angles by setting up their team to enter contested ground and push defenders away.</p>
+            </div>
+            <a href="breach.html"><img class="agent-icon" src="/pictures/agents/icons/Breach_icon.png" alt="Breach_icon"></a>
+            <a href="fade.html"><img class="agent-icon" src="/pictures/agents/icons/Fade_icon.png" alt="Fade_icon"></a>
+            <a href="kayo.html"><img class="agent-icon" src="/pictures/agents/icons/KAYO_icon.png" alt="KAYO_icon"></a>
+            <a href="skye.html"><img class="agent-icon" src="/pictures/agents/icons/Skye_icon.png" alt="Skye_icon"></a>
+            <a href="sova.html"><img class="agent-icon" src="/pictures/agents/icons/Sova_icon.png" alt="Sova_icon"></a>
+        </div>
+        <div class="row-1">
+            <div class="agent-class">
+                <h2>SENTINELS</h2>
+                <img src="/pictures/agents/icons/Sentinel.png" alt="Sentinel">
+                <p>Sentinels are defensive experts who can lock down areas and watch flanks, both on attacker and defender rounds.</p>
+            </div>
+            <a href="chamber.html"><img class="agent-icon" src="/pictures/agents/icons/Chamber_icon.png" alt="Chamber_icon"></a>
+            <a href="cypher.html"><img class="agent-icon" src="/pictures/agents/icons/Cypher_icon.png" alt="Cypher_icon"></a>
+            <a href="killjoy.html"><img class="agent-icon" src="/pictures/agents/icons/Killjoy_icon.png" alt="Killjoy_icon"></a>
+            <a href="sage.html"><img class="agent-icon" src="/pictures/agents/icons/Sage_icon.png" alt="Sage_icon"></a>
+        </div>
+    </section>
+
+    <img class="background-picture" src="/pictures/agents/valorant.png" alt="">
+
+
+    <script src="/agents.js"></script>
+  </body>
+</html>
