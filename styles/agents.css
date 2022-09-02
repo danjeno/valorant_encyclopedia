@@ -1,16 +1,25 @@
 body {
   margin: 0;
   padding: 0%;
-  /* background: rgb(14, 24, 35);
+  /* position: absolute;
+  background: rgb(14, 24, 35);
   background: radial-gradient(
     circle,
     rgba(14, 24, 35, 1) 35%,
-    rgb(2, 1, 18) 100%
-  ); */
-  background-image: url("/pictures/agents/pics/background2.JPG");
-  background-size: 1920px 1080x;
+    rgb(2, 1, 18) 100% */
+    background-image: url("/pictures/agents/pics/background2.JPG");
+    background-size: 1920px 1080x;
+
 
   overflow-x: hidden;
+}
+
+body:before {
+    content: "";
+    position: relative;
+    background-image: url("/pictures/agents/pics/background2.JPG");
+    background-size: 1920px 1080x;
+    opacity: 0.5;
 }
 
 
