@@ -264,7 +264,7 @@ ABOUT SECTION
   padding: 0;
   color: var(--button-text-color);
   cursor: pointer;
- 
+  
   
   --button-text-color: var(--background-color);
   --button-text-color-hover: var(--button-background-color);
@@ -325,6 +325,7 @@ ABOUT SECTION
   bottom: 3px;
 }
 
+
 .btn-inner {
   position: relative;
   display: block;
@@ -381,6 +382,10 @@ ABOUT SECTION
   background-color: var(--button-bits-color-hover);
 }
 
+.btn-arsenal:hover {
+  background-color: black;
+}
+
 .btn-light {
   --button-background-color: var(--background-color);
   --button-text-color: var(--highlight-color);
@@ -395,6 +400,12 @@ ARSENAL SECTION
 
 #arsenal {
   background-color: #FF4655;
+  overflow-y: hidden;
+  height: 46vw;
+}
+
+.arsenal-info-header-text {
+  color: #ECE8E1;
 }
 
 .arsenal-title-header {
@@ -407,4 +418,32 @@ ARSENAL SECTION
     color: #0F1923;
     letter-spacing: -0.4vw;
     text-transform: uppercase;
+    text-shadow: 5px 10px white;
+}
+
+.arsenal-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.arsenal-weapon-text {
+  position: absolute;
+  text-align: center;
+  margin-top: 2vw;
+}
+
+.image-phantom:hover {
+  scale: 1.1;
+  transition: 0.5s;
+}
+
+.arsenal-weapon-text {
+  color: #ECE8E1;
+}
+
+.arsenal-header {
+  padding-bottom: 1.5vw;
+  color: #383E3A;
+  text-transform: uppercase;
+  font-size: 1.5vw;
 }
