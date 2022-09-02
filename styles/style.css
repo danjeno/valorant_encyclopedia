@@ -447,3 +447,60 @@ ARSENAL SECTION
   text-transform: uppercase;
   font-size: 1.5vw;
 }
+
+
+/*************************
+AGENTS SECTION
+*************************/
+
+#agents {
+  background-color: #ece8e1; 
+}
+
+.agents-title-header {
+  font-size: 8vw;
+    text-align: start;
+    margin-left: 18vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    font-family: 'Oswald', sans-serif;
+    color: #0F1923;
+    letter-spacing: -0.4vw;
+    text-transform: uppercase;
+}
+
+.agents-info {
+  width: 17vw;
+  display: block;
+  text-align: start;
+  margin-left: 22vw;
+  height: 20vw;
+}
+
+.agents-info-header-text  {
+  color: #768079;
+}
+
+.agents-header {
+  padding-bottom: 1.5vw;
+  color: #383E3A;
+  text-transform: uppercase;
+}
+
+.agents-main-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-video {
+  width: 40%;
+  height: 40%;
+ 
+}
+
+.gameplay-video {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  margin-bottom: 3vw;
+}
