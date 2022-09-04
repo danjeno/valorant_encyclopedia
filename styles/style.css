@@ -241,21 +241,23 @@ ABOUT SECTION
 }
 
 .about-info {
-  width: 17vw;
+  /* width: 17vw; */
   display: block;
   text-align: start;
   margin-left: 22vw;
-  height: 20vw;
+  /* height: 20vw; */
 }
 
 .about-info-header-text  {
   color: #768079;
+  width: 320px;
 }
 
 .about-header {
   padding-bottom: 1.5vw;
   color: #383E3A;
   text-transform: uppercase;
+  font-size: 30px;
 }
 
 .about-main-div {
@@ -275,6 +277,218 @@ ABOUT SECTION
   border-radius: 15px;
   margin-bottom: 3vw;
 }
+
+/*************************
+ARSENAL SECTION
+*************************/
+
+#arsenal {
+  background-color: #ff4655;
+}
+
+.arsenal-info-header-text {
+  color: #ECE8E1;
+  width: 320px;
+}
+
+.arsenal-title-header {
+  font-size: 8vw;
+    text-align: start;
+    margin-left: 18vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    font-family: 'Oswald', sans-serif;
+    color: #0F1923;
+    letter-spacing: -0.4vw;
+    text-transform: uppercase;
+    text-shadow: 5px 10px white;
+}
+
+.arsenal-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.arsenal-info {
+  display: block;
+  text-align: start;
+  margin-left: 22vw;
+  margin-bottom: 2vw;
+
+}
+
+.image-phantom {
+  width: 35vw;
+}
+
+.arsenal-weapon-text {
+  position: absolute;
+  text-align: center;
+  margin-top: 2vw;
+}
+
+.image-phantom:hover {
+  scale: 1.1;
+  transition: 0.5s;
+}
+
+.arsenal-weapon-text {
+  color: #ECE8E1;
+}
+
+.arsenal-header {
+  padding-bottom: 1.5vw;
+  color: #383E3A;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+
+/*************************
+AGENTS SECTION
+*************************/
+
+#agents {
+  background: url("/pictures/background/1239568.jpg" );
+  z-index: -99;
+}
+
+.agents-title-header {
+  font-size: 8vw;
+    text-align: start;
+    margin-left: 18vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    font-family: 'Oswald', sans-serif;
+    color: #0F1923;
+    letter-spacing: -0.4vw;
+    text-transform: uppercase;
+    text-shadow: 5px 10px #ff4655;
+}
+
+.agents-info {
+  
+  display: block;
+  text-align: start;
+  margin-left: 22vw;
+ 
+}
+
+.agents-info-header-text  {
+  color: #768079;
+  width: 320px;
+}
+
+.agents-header {
+  padding-bottom: 1.5vw;
+  color: #828683;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.agents-main-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-video {
+  width: 40%;
+  height: 40%;
+ 
+}
+
+.fade-image, .chamber-image{
+  height: 26vw;
+  
+}
+
+.fade-image:hover, .chamber-image:hover {
+  scale: 1.1;
+  transition: 0.5s;
+}
+
+/*************************
+FOOTER SECTION
+*************************/
+
+#footer-nav {
+  margin-bottom: 3.5vw;
+}
+
+#footer-section {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background: url(/pictures/background/backgroung-section1.jpg);
+  
+}
+
+#footer-section p {
+  font-size: 70%;
+}
+
+#footer-social-links {
+  list-style: none;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 1.5vw;
+}
+
+#footer-social-links li {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 1em;
+}
+
+#footer-nav li a{
+  margin-bottom: 20px;
+  font-size: 1.6vw;
+}
+
+#footer-nav li a:link,
+#footer-nav li a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #171717;
+  opacity: 0.7;
+  transition: opacity 0.5s;
+  font-size: 1.5em;
+}
+
+#footer-nav li a:hover,
+#footer-nav li a:active {
+  opacity: 1;
+}
+
+#footer-social-links li a:link,
+#footer-social-links li a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #171717;
+  opacity: 0.5;
+  font-size: 25px;
+}
+
+#footer-social-links li a:hover,
+#footer-social-links li a:active {
+  opacity: 1;
+}
+
+#footer-nav ul {
+  list-style: none;
+}
+
+#footer-images img {
+ 
+  height: 6em;
+}
+
+
+
+/**************************
+BUTTON STYLE
+**************************/
 
 .btn {
   
@@ -302,7 +516,7 @@ ABOUT SECTION
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.3vw;
+  font-size: 20px;
   transition: all .15s ease;
   margin-top: 2vw;
 }
@@ -416,200 +630,16 @@ ABOUT SECTION
   --button-bits-color-hover: #ece8e1;
 }
 
-/*************************
-ARSENAL SECTION
-*************************/
 
-#arsenal {
-  background-color: #ff4655;
-  overflow-y: hidden;
-  height: 100%;
-  background-size: contain;
-}
+/*************************************
+Media Queries Styles
+**************************************/
 
-.arsenal-info-header-text {
-  color: #ECE8E1;
-}
-
-.arsenal-title-header {
-  font-size: 8vw;
-    text-align: start;
-    margin-left: 18vw;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
-    font-family: 'Oswald', sans-serif;
-    color: #0F1923;
-    letter-spacing: -0.4vw;
-    text-transform: uppercase;
-    text-shadow: 5px 10px white;
-}
-
-.arsenal-image {
-  max-width: 100%;
-  height: auto;
-}
-
-.arsenal-weapon-text {
-  position: absolute;
-  text-align: center;
-  margin-top: 2vw;
-}
-
-.image-phantom:hover {
-  scale: 1.1;
-  transition: 0.5s;
-}
-
-.arsenal-weapon-text {
-  color: #ECE8E1;
-}
-
-.arsenal-header {
-  padding-bottom: 1.5vw;
-  color: #383E3A;
-  text-transform: uppercase;
-  font-size: 1.5vw;
-}
-
-
-/*************************
-AGENTS SECTION
-*************************/
-
-#agents {
-  background: url("/pictures/background/1239568.jpg" );
-}
-
-.agents-title-header {
-  font-size: 8vw;
-    text-align: start;
-    margin-left: 18vw;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
-    font-family: 'Oswald', sans-serif;
-    color: #0F1923;
-    letter-spacing: -0.4vw;
-    text-transform: uppercase;
-    text-shadow: 5px 10px #ff4655;
-}
-
-.agents-info {
-  width: 17vw;
-  display: block;
-  text-align: start;
-  margin-left: 22vw;
-  height: 20vw;
-}
-
-.agents-info-header-text  {
-  color: #768079;
-  font-size: 0.85vw;
-}
-
-.agents-header {
-  padding-bottom: 1.5vw;
-  color: #828683;
-  text-transform: uppercase;
-  font-size: 1.4vw;
-}
-
-.agents-main-div {
-  display: flex;
-  justify-content: space-around;
-}
-
-.about-video {
-  width: 40%;
-  height: 40%;
- 
-}
-
-.gameplay-video {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  margin-bottom: 3vw;
-}
-
-.fade-image, .chamber-image{
-  height: 26vw;
-  
-}
+@media only screen and (max-width: 780px) {
+  .gameplay-video, .image-phantom, .arsenal-weapon-text, .fade-image, .chamber-image {
+    display: none;
+  }
 
 
 
-/*************************
-FOOTER SECTION
-*************************/
-
-#footer-nav {
-  margin-bottom: 3.5vw;
-}
-
-#footer-section {
-  text-align: center;
-  padding: 100px 0;
-  background: url(/pictures/background/backgroung-section1.jpg);
-  background-size: 99%;
-  
-}
-
-#footer-section p {
-  font-size: 70%;
-}
-
-#footer-social-links {
-  list-style: none;
-  margin-left: 30px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  font-size: 1.5vw;
-}
-
-#footer-social-links li {
-  display: inline-block;
-  margin-right: 30px;
-  font-size: 1em;
-}
-
-#footer-nav li a{
-  margin-bottom: 20px;
-  font-size: 1.6vw;
-}
-
-#footer-nav li a:link,
-#footer-nav li a:visited {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #171717;
-  opacity: 0.7;
-  transition: opacity 0.5s;
-}
-
-#footer-nav li a:hover,
-#footer-nav li a:active {
-  opacity: 1;
-}
-
-#footer-social-links li a:link,
-#footer-social-links li a:visited {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #171717;
-  opacity: 0.5;
-  font-size: 120%;
-}
-
-#footer-social-links li a:hover,
-#footer-social-links li a:active {
-  opacity: 1;
-}
-
-#footer-nav ul {
-  list-style: none;
-}
-
-#footer-images img {
-  border: 10px solid black;
-  border-radius: 15px;
 }
