@@ -639,7 +639,18 @@ Media Queries Styles
   .gameplay-video, .image-phantom, .arsenal-weapon-text, .fade-image, .chamber-image {
     display: none;
   }
+}
 
+@media only screen and (max-width: 440px) {
+  .about-info, .arsenal-info, .agents-info {
+    margin-left: 11vw;
+  }
 
+  .intro-title {
+    font-size: 4vw;
+  }
 
+  .intro-logo {
+    width: 50vw;
+  }
 }
