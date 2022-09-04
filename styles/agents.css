@@ -1,6 +1,12 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 body {
-  margin: 0;
-  padding: 0%;
+  font-size: 1vw;
   /* position: absolute;
   background: rgb(14, 24, 35);
   background: radial-gradient(
@@ -11,7 +17,6 @@ body {
     background-size: 1920px 1080x;
 
 
-  overflow-x: hidden;
 }
 
 body:before {
@@ -19,70 +24,15 @@ body:before {
     position: relative;
     background-image: url("/pictures/agents/pics/background2.JPG");
     background-size: 1920px 1080x;
-    opacity: 0.5;
-}
-
-
-.background-picture {
-    width: 1000px;
     opacity: 0.1;
-    position: absolute;
-    bottom: -1000px;
-    left: 0;
-    right: 0px;
-    margin: auto;
-    text-align: center;
-    z-index: -1;
 }
 
-#banner {
-  position: relative;
-  border-bottom: 5px solid #ff4b50;
-  width: 100%;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: inset 0px 0px 30px 0px #ff4b50;
-  margin-bottom: 0px;
-}
-
-
-
-#banner:before {
-  content: "";
-  background-image: url("/pictures/agents/pics/background2.JPG");
-  background-size: 1920px 1080px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  opacity: 0.2;
-}
-
-.banner-text {
-    text-align: center;
-}
-
-.banner-text h1 {
-  font-family: "Oswald", sans-serif;
-  font-size: 80px;
-  color: #ece8e1;
-  padding: auto;
-  text-shadow: 2px 2px #ff4b50;
-
-}
 
 p {
     font-family: 'Alumni Sans Pinstripe',  sans-serif;
     color: #ece8e1;
 }
 
-.banner-text p {
-    font-size: 30px;
-}
 
 #main-container {
     width: 80%;
@@ -142,19 +92,16 @@ p {
 }
 
 
-#agents-info2 {
-
-}
-
 .agent-info{
     position: relative;
+    max-width: 100vw;
     /* border-top: 1px solid #ff4b50; */
-    border-bottom: 5px solid #ff4b50;
+    border-bottom: 1px solid #ff4b50;
+    border-top: 1px solid #ff4b50;
     display: flex;
     font-family: "Oswald", sans-serif;
     color: #ece8e1;
-    font-size: 35px;
-    overflow: hidden;
+    overflow-y: hidden;
     animation-name: openagentpage;
     animation-duration: 2s;
     box-shadow: inset 0px 0px 30px 0px #ff4b50;
@@ -162,7 +109,7 @@ p {
 
 @keyframes openagentpage {
     0%   {max-height: 0vh;}
-    100% {max-height: 75vh;}
+    100% {max-height: 80vh;}
 }
 
 .agent-info:before {
@@ -180,6 +127,7 @@ p {
 
 .agent-info h1 {
     margin: 0;
+    font-size: 2.5vw;
     height: 15%;
     text-shadow: 2px 2px #ff4b50;
 }
@@ -189,17 +137,17 @@ p {
     color: #ece8e1;
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 25vw;
     text-align: center;
-    height: fit-content;
+
 }
 
 .agent-picture h1 {
-    font-size: 80px;
+    font-size: 4vw;
 
 }
 .agent {
-    width: 350px;
+    width: 18.2vw;
     margin: auto;
     transition: 0.1s ease-in-out;
 }
@@ -213,78 +161,102 @@ transform: scale(1.2);
 }
 
 .bio-skills {
-    margin-right: 10px;
+    margin-right: 0.5vw;
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 35%;
+    width: 35vw;
     height: fit-content;
 }
 
 .bio-skills p{
-    margin-top: 0%;
-    font-size: 30px;
+    margin-top: 0;
+    font-size: calc(6px + 1.25vw)
 }
 
 .skills {
     display: flex;
     justify-content: space-around;
-    margin-top: 15px;
-    margin-bottom: 20px;
+    margin-top: 0.8vw;
+    margin-bottom: 1.05vw;
     z-index: 2;
 }
 
 .skills img {
-    width: 60px;
-    padding: 5px;
-    border: 1px solid #ece8e1;
-    border-radius: 10px;
+    width: 3.2vw;
+    padding: 0.25vw;
+    border: 0.15vw solid #ece8e1;
+    border-radius: 0.5vw;
     cursor: pointer;
 }
 
 .bio-skills h2{
     text-shadow: 1px 1px #ff4b50;
-    font-size: 35px;
+    font-size: 1.8vw;
     margin: 0px;
 }
 
-
-.skills-description p {
-    margin: 5px;
+.skills-text p {
+    margin: 0.25vw;
+    font-size: calc(6px + 1.1vw);
 }
 
-#q-description, #w-description, #e-description, #r-description {
-    display: none;
+.skills-text{
+    transition: all 0.2s;
 }
 
-#w-description p {
-    font-size:30px;
-}
-
-#r-description p {
-    font-size: 30px;
-}
-
-#e-description p {
-    font-size: 30px;
+.skills-text.pre-animation{
+    opacity: 0;
 }
 
 
 
-#video-container {
+
+.video-container {
+    transition: all 0.2s;
     display: flex;
     justify-content: center;
-    width: 40%;
+    width: 40vw;
     margin: auto;
+    margin-right: 2vw;
+ 
 }
 
-#q-video, #w-video, #e-video, #r-video{
-display: none;
+
+
+.container.pre-animation {
+    opacity: 0;
+}
+
+video {
 width: 90%;
 height: auto;
 border: 3px solid #ece8e1;
-border-radius: 70px 20px;
+border-radius: 3.6vw 1vw;
 box-shadow: 10px 5px 5px #ff4b50;
+}
+
+
+.slider {
+    max-width: 100vw;
+    overflow: hidden;
+}
+.slider-line {
+    display: flex;
+    transition: all ease 1s;
+    overflow-x: hidden;
+}
+
+
+
+
+
+.buttons{
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 
