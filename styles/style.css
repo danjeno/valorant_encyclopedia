@@ -536,3 +536,74 @@ AGENTS SECTION
   
 }
 
+
+
+/*************************
+FOOTER SECTION
+*************************/
+
+
+
+footer {
+  text-align: center;
+  padding: 100px 0;
+
+}
+
+footer p {
+  font-size: 70%;
+}
+
+#footer-social-links {
+  list-style: none;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#footer-social-links li {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 1em;
+}
+
+#footer-nav {
+  margin-bottom: 20px;
+}
+
+#footer-nav li a:link,
+#footer-nav li a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #171717;
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+
+#footer-nav li a:hover,
+#footer-nav li a:active {
+  opacity: 1;
+}
+
+#footer-social-links li a:link,
+#footer-social-links li a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #171717;
+  opacity: 0.5;
+  font-size: 120%;
+}
+
+#footer-social-links li a:hover,
+#footer-social-links li a:active {
+  opacity: 1;
+}
+
+#footer-nav ul {
+  list-style: none;
+}
+
+#footer-text  {
+  
+  
+}
