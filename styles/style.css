@@ -542,15 +542,19 @@ AGENTS SECTION
 FOOTER SECTION
 *************************/
 
-
-
-footer {
-  text-align: center;
-  padding: 100px 0;
-
+#footer-nav {
+  margin-bottom: 3.5vw;
 }
 
-footer p {
+#footer-section {
+  text-align: center;
+  padding: 100px 0;
+  background: url(/pictures/background/backgroung-section1.jpg);
+  background-size: 99%;
+  
+}
+
+#footer-section p {
   font-size: 70%;
 }
 
@@ -559,6 +563,7 @@ footer p {
   margin-left: 30px;
   margin-bottom: 20px;
   cursor: pointer;
+  font-size: 1.5vw;
 }
 
 #footer-social-links li {
@@ -567,8 +572,9 @@ footer p {
   font-size: 1em;
 }
 
-#footer-nav {
+#footer-nav li a{
   margin-bottom: 20px;
+  font-size: 1.6vw;
 }
 
 #footer-nav li a:link,
@@ -603,7 +609,7 @@ footer p {
   list-style: none;
 }
 
-#footer-text  {
-  
-  
+#footer-images img {
+  border: 10px solid black;
+  border-radius: 15px;
 }

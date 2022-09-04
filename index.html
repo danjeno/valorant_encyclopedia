@@ -62,7 +62,7 @@
               And, with one life per-round, you'll need to think faster than your opponent if you want to survive.
               ake on foes across Competitive and Unranked modes as well as Deathmatch and Spike Rush.
             </p>
-            <button class="btn btn-light">
+            <button onclick="Play()" class="btn btn-light" id="demo">
               <span class="btn-inner">
                 <span class="btn-slide"></span>
                 <span class="btn-content">Watch gameplay</span>
@@ -71,7 +71,7 @@
         </div>
 
         <div class="about-video">
-          <video autoplay muted loop class="gameplay-video">
+          <video autoplay muted loop class="gameplay-video" id="vid">
             <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltefd45731d8f9d9df/6217f2ea910a6c613c73168c/VALORANT_PLAY22_16x9_Target4_v005.mp4" type="video/mp4">
           </video>
         </div>
@@ -144,7 +144,7 @@
   </div> 
   </section>
 
-  <footer>
+  <footer id="footer-section">
 		<div id="footer-nav">
 			<ul>
 				<li><a href="#">Arsenal</a></li>
@@ -160,11 +160,13 @@
 				<li><a href="#">Company information</a></li>	
 			</ul>
 		</div>
-		<div id="footer-text">
-			<img src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/blt45fdb1ce76c77293/5e7a5d8ccd562e2d656ccc57/EU_-_16_black.jpg?&height=100&disable=upscale" alt="">
-      <img src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/blt65b392ad6fcc1870/5e7d3ccfd84c6d2d6707a600/EU_-_descriptor_violence.png?&height=100&disable=upscale" alt="">
-      <img src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/blta4cd2560c7208614/5e7d3cf671abc60ae32d3960/EU_-_descriptor_in-game-purchase.png?&height=100&disable=upscale" alt="">
-      <img src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/bltff21ad2608691057/5e7a5c251cab8108eff538f1/Germany_-_16_(small).png?&height=100&disable=upscale" alt="">
+		<div id="footer-images">
+      <a href="https://pegi.info/"><img src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/blt45fdb1ce76c77293/5e7a5d8ccd562e2d656ccc57/EU_-_16_black.jpg?&height=100&disable=upscale" alt=""></a>
+      <a href="https://pegi.info/"><img src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/blt65b392ad6fcc1870/5e7d3ccfd84c6d2d6707a600/EU_-_descriptor_violence.png?&height=100&disable=upscale" alt=""></a>
+      <a href="https://pegi.info/"><img src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/blta4cd2560c7208614/5e7d3cf671abc60ae32d3960/EU_-_descriptor_in-game-purchase.png?&height=100&disable=upscale" alt=""></a>
+			<a href="https://usk.de/en/"><img src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/bltff21ad2608691057/5e7a5c251cab8108eff538f1/Germany_-_16_(small).png?&height=100&disable=upscale" alt=""></a>
+
+      
 		</div>
 	</footer>
 
