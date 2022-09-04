@@ -423,7 +423,7 @@ ARSENAL SECTION
 #arsenal {
   background-color: #FF4655;
   overflow-y: hidden;
-  height: 46vw;
+  height: 49vw;
 }
 
 .arsenal-info-header-text {
@@ -476,7 +476,8 @@ AGENTS SECTION
 *************************/
 
 #agents {
-  background-color: #ece8e1; 
+  background: url("/pictures/background/background.jpg");
+
 }
 
 .agents-title-header {
@@ -525,4 +526,12 @@ AGENTS SECTION
   height: 100%;
   border-radius: 15px;
   margin-bottom: 3vw;
+}
+
+.fade-image {
+  height: 26vw;
+}
+
+.chamber-image {
+  height: 26vw;
 }
