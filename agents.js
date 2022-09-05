@@ -40,8 +40,12 @@ function rollSlider(){
 }
 
 
+function rollFast(cnt){
+    sliderLine.style.transform = 'translate(-'+cnt*width+'px';
+}
 
 
+//SHOW TEXT
 
 function show_text_1 (){
     document.getElementById("controllers-text").innerHTML = "Controllers are experts in slicing up dangerous territory to set their team up for success.";
@@ -74,3 +78,11 @@ function show_text_4 (){
 function unshow_text_4 (){
     document.getElementById("sentinels-text").innerHTML = "";
 }
+
+function ani(){
+    document.getElementById('controllers-text-wrapper').className = 'contr-animation';
+    document.querySelector('#controllers-text-wrapper').style.display = "inline";
+    // setTimeout (() => {
+    // document.querySelector('#controllers-text').innerHTML = "Hello";
+    // }, 1000);
+    }

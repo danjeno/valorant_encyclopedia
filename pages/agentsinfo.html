@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="main">
-    <section class="agents-info-wrapper">
+    <section id="agents-info-wrapper">
         <div class="slider">
         <div class="slider-line">
 
@@ -1137,14 +1137,14 @@
             <div class="agent-class">
                 <h2>CONTROLLERS</h2>
                 <img src="/pictures/agents/icons/Controller.png" alt="Controller" onmouseover="show_text_1()" onmouseout="unshow_text_1()">
-                <div>
+                <div id="controllers-text-wrapper">
                 <p id="controllers-text"></p>
                 </div>
             </div>
-            <a href="agentspages/astra.html"><img class="agent-icon" src="/pictures/agents/icons/Astra_icon.png" alt="Astra_icon"></a>
-            <img class="agent-icon" src="/pictures/agents/icons/Brimstone_icon.png" alt="Brimstone_icon">
-            <img class="agent-icon" src="/pictures/agents/icons/Omen_icon.png" alt="Omen_icon">
-            <img class="agent-icon" src="/pictures/agents/icons/Viper_icon.png" alt="Viper_icon">
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/Astra_icon.png" alt="Astra_icon" onclick="rollFast(0)"></a>
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/Brimstone_icon.png" alt="Brimstone_icon" onclick="rollFast(1)"></a>
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/Omen_icon.png" alt="Omen_icon" onclick="rollFast(2)"></a>
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/Viper_icon.png" alt="Viper_icon" onclick="rollFast(3)"></a>
         </div>
         <div class="row-1">
             <div class="agent-class">
@@ -1152,12 +1152,12 @@
                 <img src="/pictures/agents/icons/Duelist.png" alt="Duelist" onmouseover="show_text_2()" onmouseout="unshow_text_2()">
                 <p id="duelists-text"></p>
             </div>
-            <img class="agent-icon" src="/pictures/agents/icons/Jett_icon.png" alt="Jett_icon">
-            <img class="agent-icon" src="/pictures/agents/icons/Neon_icon.png" alt="Neon_icon">
-            <img class="agent-icon" src="/pictures/agents/icons/Phoenix_icon.png" alt="Phoenix_icon">
-            <img class="agent-icon" src="/pictures/agents/icons/Raze_icon.png" alt="Raze_icon">
-            <img class="agent-icon" src="/pictures/agents/icons/Reyna_icon.png" alt="Reyna_icon">
-            <img class="agent-icon" src="/pictures/agents/icons/Yoru_icon.png" alt="Yoru_icon">
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/Jett_icon.png" alt="Jett_icon" onclick="rollFast(4)"></a>
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/Neon_icon.png" alt="Neon_icon" onclick="rollFast(5)"></a>
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/Phoenix_icon.png" alt="Phoenix_icon" onclick="rollFast(6)"></a>
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/Raze_icon.png" alt="Raze_icon" onclick="rollFast(7)"></a>
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/Reyna_icon.png" alt="Reyna_icon" onclick="rollFast(8)"></a>
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/Yoru_icon.png" alt="Yoru_icon" onclick="rollFast(9)"></a>
         </div>
         <div class="row-1">
             <div class="agent-class">
@@ -1165,11 +1165,11 @@
                 <img src="/pictures/agents/icons/Initiator.png" alt="Initiator" onmouseover="show_text_3()" onmouseout="unshow_text_3()">
                 <p id="initiators-text"></p>
             </div>
-            <a href="agentspages/breach.html"><img class="agent-icon" src="/pictures/agents/icons/Breach_icon.png" alt="Breach_icon"></a>
-            <img class="agent-icon" src="/pictures/agents/icons/Fade_icon.png" alt="Fade_icon">
-            <img class="agent-icon" src="/pictures/agents/icons/KAYO_icon.png" alt="KAYO_icon">
-            <img class="agent-icon" src="/pictures/agents/icons/Skye_icon.png" alt="Skye_icon">
-            <img class="agent-icon" src="/pictures/agents/icons/Sova_icon.png" alt="Sova_icon">
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/Breach_icon.png" alt="Breach_icon" onclick="rollFast(10)"></a>
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/Fade_icon.png" alt="Fade_icon" onclick="rollFast(11)"></a>
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/KAYO_icon.png" alt="KAYO_icon" onclick="rollFast(12)"></a>
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/Skye_icon.png" alt="Skye_icon" onclick="rollFast(13)"></a>
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/Sova_icon.png" alt="Sova_icon" onclick="rollFast(14)"></a>
         </div>
         <div class="row-1">
             <div class="agent-class">
@@ -1177,10 +1177,10 @@
                 <img src="/pictures/agents/icons/Sentinel.png" alt="Sentinel" onmouseover="show_text_4()" onmouseout="unshow_text_4()">
                 <p id="sentinels-text"></p>
             </div>
-            <img class="agent-icon" src="/pictures/agents/icons/Chamber_icon.png" alt="Chamber_icon">
-            <img class="agent-icon" src="/pictures/agents/icons/Cypher_icon.png" alt="Cypher_icon">
-            <img class="agent-icon" src="/pictures/agents/icons/Killjoy_icon.png" alt="Killjoy_icon">
-            <img class="agent-icon" src="/pictures/agents/icons/Sage_icon.png" alt="Sage_icon">
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/Chamber_icon.png" alt="Chamber_icon" onclick="rollFast(15)"></a>
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/Cypher_icon.png" alt="Cypher_icon" onclick="rollFast(16)"></a>
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/Killjoy_icon.png" alt="Killjoy_icon" onclick="rollFast(17)"></a>
+            <a href="#agents-info-wrapper"><img class="agent-icon" src="/pictures/agents/icons/Sage_icon.png" alt="Sage_icon" onclick="rollFast(18)"></a>
         </div>
     </div>
     </section>
