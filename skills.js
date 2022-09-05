@@ -62,7 +62,7 @@ function astra_change_skill_r() {
     document.getElementById("astra-skill-name").innerHTML =
     "X - ASTRAL FORM / COSMIC DIVIDE";
     document.getElementById("astra-skill-description").innerHTML =
-    "ACTIVATE (X) to enter Astral Form where you can place Stars with PRIMARY FIRE. Stars can be reactivated later, transforming them into a Nova Pulse, Nebula, or Gravity Well. When Cosmic Divide is charged, use SECONDARY FIRE in Astral Form to begin aiming it, then PRIMARY FIRE to select two locations.";
+    "ACTIVATE (X) to enter Astral Form where you can place Stars with PRIMARY FIRE. Stars can be reactivated later, transforming them into a Nova Pulse, Nebula, or Gravity Well.";
     document.getElementById("astra-skill-video").src =
     "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltca94f8d6f8e4c91d/6036c92499494e6c4f166b15/RIFT21_Astra_Ability_ULT.mp4";
     }, 200);
@@ -1078,7 +1078,7 @@ function sova_change_skill_w() {
   setTimeout(function () {
     document.getElementById("sova-skill-name").innerHTML = "E - RECON BOLT";
     document.getElementById("sova-skill-description").innerHTML =
-      "EQUIP a bow with a recon bolt. FIRE to send the recon bolt forward, activating upon collision and revealing the location of nearby enemies caught in the line of sight of the bolt. HOLD FIRE to extend the range of the projectile. ALTERNATE FIRE to add up to two bounces to this arrow.";
+      "EQUIP a bow with a recon bolt. FIRE to send the recon bolt forward, activating upon collision and revealing the location of nearby enemies caught in the line of sight of the bolt. HOLD FIRE to extend the range of the projectile.";
     document.getElementById("sova-skill-video").src =
       "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt44b27c0d688217db/5ecad88398f79d6925dbee21/Sova_E_v001_web.mp4";
   }, 200);
@@ -1115,7 +1115,7 @@ function sova_change_skill_r() {
   document.getElementById("sova-skill-name").innerHTML =
     "X - HUNTER’S FURY";
   document.getElementById("sova-skill-description").innerHTML =
-    "EQUIP a bow with three long-range wall-piercing energy blasts. FIRE to release an energy blast in a line in front of Sova, dealing damage and revealing the location of enemies caught in the line. This ability can be RE-USED up to two more times while the ability timer is active.";
+    "EQUIP a bow with three long-range wall-piercing energy blasts. FIRE to release an energy blast in a line in front of Sova, dealing damage and revealing the location of enemies caught in the line.";
   document.getElementById("sova-skill-video").src =
     "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltf9fc34106a23479c/5ecad88397b46c1911ad1872/Sova_X_v001_web.mp4";
     }, 200);

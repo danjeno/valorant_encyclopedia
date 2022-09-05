@@ -7,25 +7,25 @@ html, body {
 
 body {
   font-size: 1vw;
+  font-weight: 600;
   /* position: absolute;
   background: rgb(14, 24, 35);
   background: radial-gradient(
     circle,
     rgba(14, 24, 35, 1) 35%,
     rgb(2, 1, 18) 100% */
-    background-image: url("/pictures/agents/pics/background2.JPG");
-    background-size: 1920px 1080x;
+    background-color: #1c252e;
 
 
 }
 
-body:before {
+/* body:before {
     content: "";
     position: relative;
     background-image: url("/pictures/agents/pics/background2.JPG");
     background-size: 1920px 1080x;
     opacity: 0.1;
-}
+} */
 
 
 p {
@@ -34,62 +34,7 @@ p {
 }
 
 
-#main-container {
-    width: 80%;
-    margin: auto;
-    height: 100%;
-    border-left: 1px solid #ff4b50;
-    border-right: 1px solid #ff4b50;
-    box-shadow: inset 0px 0px 30px 0px #ff4b50;
-}
 
-.row-1 {
-    font-family: "Oswald", sans-serif;
-    margin-left: 25px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-}
-
-.agent-class{
-    margin-right: 80px;
-    width: 270px;
-    height: 45vh;
-}
-
-.agent-class img {
-    margin-bottom: 0px;
-    opacity: 1;
-    width: 110px;
-    height: 110px;
-    -webkit-filter: drop-shadow(2px 2px 2px #ff4b50);
-    filter: drop-shadow(2px 2px 2px #ff4b50);
-}
-
-.agent-class h2 {
-    color:#ece8e1;
-    font-size: 40px;
-    text-shadow: 1px 1px #ff4b50;
-    text-align: center;
-}
-
-.agent-class p {
-    font-size: 25px;
-    background-color: #1c252e;
-}
-
-
-.agent-icon{
-    opacity: 0.8;
-    width: 100px;
-    height: 100px;
-    border: 3px solid #ece8e1 ;
-    border-radius: 50px;
-    margin-right: 30px;
-
-    box-shadow: 2px 2px 2px #ff4b50;
-}
 
 
 .agent-info{
@@ -102,8 +47,8 @@ p {
     font-family: "Oswald", sans-serif;
     color: #ece8e1;
     overflow-y: hidden;
-    animation-name: openagentpage;
-    animation-duration: 2s;
+    /* animation-name: openagentpage;
+    animation-duration: 2s; */
     box-shadow: inset 0px 0px 30px 0px #ff4b50;
 }
 
@@ -183,11 +128,11 @@ transform: scale(1.2);
 }
 
 .skills img {
-    width: 3.2vw;
-    padding: 0.25vw;
+    width: 3.25vw;
+    /* padding: 0.25vw;
     border: 0.15vw solid #ece8e1;
     border-radius: 0.5vw;
-    cursor: pointer;
+    cursor: pointer; */
 }
 
 .bio-skills h2{
@@ -252,12 +197,87 @@ box-shadow: 10px 5px 5px #ff4b50;
 
 
 .buttons{
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5vw;
+}
+
+
+
+#main-container {
+    position: relative;
+    width: 80vw;
+    margin: auto;
+    height: 65vw;
+    border-left: 1px solid #ff4b50;
+    border-right: 1px solid #ff4b50;
+    box-shadow: inset 0px 1vw 0px 0px #ff4b50;
+    
+}
+
+#main-container:before {
+        content: "";
+        background-image: url("/pictures/agents/pics/background2.JPG");
+        background-size: 1920px 1080px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        opacity: 0.2;
+}
+
+#agents-list {
+    display: flex;
+}
+
+.row-1 {
+    width: 20vw;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     text-align: center;
 }
 
+.agent-class{
+    width: 14.06vw;
+}
+
+.agent-class img {
+    margin-bottom: 0px;
+    opacity: 1;
+    width: 5.7vw;
+    -webkit-filter: drop-shadow(2px 2px 2px #ff4b50);
+    filter: drop-shadow(2px 2px 2px #ff4b50);
+}
+
+.agent-class h2 {
+    color:#ece8e1;
+    font-size: 2.08vw;
+    text-shadow: 1px 1px #ff4b50;
+    text-align: center;
+}
+
+.agent-class p {
+    font-size: calc(4px + 1.1vw);
+    background-color: #1c252e;
+}
+
+
+.agent-icon{
+    opacity: 0.8;
+    width: 5.2vw;
+    border: 3px solid #ece8e1 ;
+    border-radius: 2.6vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    box-shadow: 2px 2px 2px #ff4b50;
+}
 
 

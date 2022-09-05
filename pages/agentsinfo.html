@@ -10,9 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Oswald:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/agents.css" />
+    <link rel="stylesheet" href="/styles/agents/agents.css" />
+    <link rel="stylesheet" href="/styles/agents/agents_buttons.css" />
   </head>
   <body>
+    <div class="main">
     <section class="agents-info-wrapper">
         <div class="slider">
         <div class="slider-line">
@@ -28,10 +30,42 @@
                     <p>Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full command of her astral form and a talent for deep strategic foresight, she’s always eons ahead of her enemy’s next move.</p>
                     <h1>SPECIAL SKILLS</h1>
                     <div class="skills">
-                        <img src="/pictures/agents/skills/astra/astra-q.png" alt="astra-q" onclick="astra_change_skill_q()">
-                        <img src="/pictures/agents/skills/astra/astra-w.png" alt="astra-w" onclick="astra_change_skill_w()"> 
-                        <img src="/pictures/agents/skills/astra/astra-e.png" alt="astra-e" onclick="astra_change_skill_e()">
-                        <img src="/pictures/agents/skills/astra/astra-r.png" alt="astra-r" onclick="astra_change_skill_r()">
+                        <div>
+                            <button class="btn btn--light" onclick="astra_change_skill_q()">
+                              <span class="btn__inner">
+                                <span class="btn__slide"></span>
+                                <span class="btn__content"><img src="/pictures/agents/skills/astra/astra-q.png" alt=""></span>
+                              </span>
+                            </button>
+                          </div>
+                          <div>
+                            <button class="btn btn--light" onclick="astra_change_skill_w()">
+                              <span class="btn__inner">
+                                <span class="btn__slide"></span>
+                                <span class="btn__content"><img src="/pictures/agents/skills/astra/astra-w.png" alt=""></span>
+                              </span>
+                            </button>
+                          </div>
+                          <div>
+                            <button class="btn btn--light" onclick="astra_change_skill_e()">
+                              <span class="btn__inner">
+                                <span class="btn__slide"></span>
+                                <span class="btn__content"><img src="/pictures/agents/skills/astra/astra-e.png" alt=""></span>
+                              </span>
+                            </button>
+                          </div>
+                          <div>
+                            <button class="btn btn--light" onclick="astra_change_skill_r()">
+                              <span class="btn__inner">
+                                <span class="btn__slide"></span>
+                                <span class="btn__content"><img src="/pictures/agents/skills/astra/astra-r.png" alt="" ></span>
+                              </span>
+                            </button>
+                          </div>
+                        <!-- <img src="/pictures/agents/skills/astra/astra-q.png" alt="astra-q" onclick="astra_change_skill_q()"> -->
+                        <!-- <img src="/pictures/agents/skills/astra/astra-w.png" alt="astra-w" onclick="astra_change_skill_w()">  -->
+                        <!-- <img src="/pictures/agents/skills/astra/astra-e.png" alt="astra-e" onclick="astra_change_skill_e()">
+                        <img src="/pictures/agents/skills/astra/astra-r.png" alt="astra-r" onclick="astra_change_skill_r()"> -->
                     </div>
                     <div class="skills-text">
                     <h2 id="astra-skill-name">Q - NOVA PULSE</h2>
@@ -57,10 +91,38 @@
                 <p>Joining from the USA, Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance makes him an unmatched boots-on-the-ground commander.</p>
                 <h1>SPECIAL SKILLS</h1>
                 <div class="skills">
-                    <img src="/pictures/agents/skills/brimstone/brimstone_q.png" alt="brim-q" onclick="brimstone_change_skill_q()">
-                    <img src="/pictures/agents/skills/brimstone/brimstone-w.png" alt="brim-w" onclick="brimstone_change_skill_w()"> 
-                    <img src="/pictures/agents/skills/brimstone/brimstone-e.png" alt="brim-e" onclick="brimstone_change_skill_e()">
-                    <img src="/pictures/agents/skills/brimstone/brimstone-r.png" alt="brim-r" onclick="brimstone_change_skill_r()">
+                    <div>
+                        <button class="btn btn--light" onclick="brimstone_change_skill_q()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/brimstone/brimstone_q.png" alt="brim-q"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="brimstone_change_skill_w()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/brimstone/brimstone-w.png" alt="brim-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="brimstone_change_skill_e()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/brimstone/brimstone-e.png" alt="brim-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="brimstone_change_skill_r()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/brimstone/brimstone-r.png" alt="brim-w"></span>
+                          </span>
+                        </button>
+                      </div>
                 </div>
                 <div class="skills-text">
                 <h2 id="brimstone-skill-name">Q - INCENDIARY</h2>
@@ -87,10 +149,38 @@
                 <p>A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to learn where he might strike next.</p>
                 <h1>SPECIAL SKILLS</h1>
                 <div class="skills">
-                    <img src="/pictures/agents/skills/omen/omen-q.png" alt="omen-q" onclick="omen_change_skill_q()">
-                    <img src="/pictures/agents/skills/omen/omen-w.png" alt="omen-w" onclick="omen_change_skill_w()"> 
-                    <img src="/pictures/agents/skills/omen/omen-e.png" alt="omen-e" onclick="omen_change_skill_e()">
-                    <img src="/pictures/agents/skills/omen/omen-r.png" alt="omen-r" onclick="omen_change_skill_r()">
+                    <div>
+                        <button class="btn btn--light" onclick="omen_change_skill_q()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/omen/omen-q.png" alt="omen-q"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="omen_change_skill_w()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/omen/omen-w.png" alt="omen-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="omen_change_skill_e()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/omen/omen-e.png" alt="omen-e"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="omen_change_skill_r()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/omen/omen-r.png" alt="omen-r"></span>
+                          </span>
+                        </button>
+                      </div>
                 </div>
                 <div class="skills-text">
                 <h2 id="omen-skill-name">Q - PARANOIA</h2>
@@ -116,10 +206,38 @@
                 <p>The American chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and cripple the enemy's vision. If the toxins don't kill her prey, her mind games surely will.</p>
                 <h1>SPECIAL SKILLS</h1>
                 <div class="skills">
-                    <img src="/pictures/agents/skills/viper/viper-q.png" alt="viper-q" onclick="viper_change_skill_q()">
-                    <img src="/pictures/agents/skills/viper/viper-w.png" alt="viper-w" onclick="viper_change_skill_w()"> 
-                    <img src="/pictures/agents/skills/viper/viper-e.png" alt="viper-e" onclick="viper_change_skill_e()">
-                    <img src="/pictures/agents/skills/viper/viper-r.png" alt="viper-r" onclick="viper_change_skill_r()">
+                    <div>
+                        <button class="btn btn--light" onclick="viper_change_skill_q()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/viper/viper-q.png" alt="viper-q"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="viper_change_skill_w()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/viper/viper-w.png" alt="viper-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="viper_change_skill_e()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/viper/viper-e.png" alt="viper-e"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="viper_change_skill_r()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/viper/viper-r.png" alt="viper-r"></span>
+                          </span>
+                        </button>
+                      </div>
                 </div>
                 <div class="skills-text">
                 <h2 id="viper-skill-name">Q - POISON CLOUD</h2>
@@ -145,10 +263,38 @@
                 <p>Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.</p>
                 <h1>SPECIAL SKILLS</h1>
                 <div class="skills">
-                    <img src="/pictures/agents/skills/jett/jett-q.png" alt="jett-q" onclick="jett_change_skill_q()">
-                    <img src="/pictures/agents/skills/jett/jett-w.png" alt="jett-w" onclick="jett_change_skill_w()"> 
-                    <img src="/pictures/agents/skills/jett/jett-e.png" alt="jett-e" onclick="jett_change_skill_e()">
-                    <img src="/pictures/agents/skills/jett/jett-r.png" alt="jett-r" onclick="jett_change_skill_r()">
+                    <div>
+                        <button class="btn btn--light" onclick="jett_change_skill_q()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/jett/jett-q.png" alt="jett-q"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="jett_change_skill_w()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/jett/jett-w.png" alt="jett-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="jett_change_skill_e()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/jett/jett-e.png" alt="jett-e"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="jett_change_skill_r()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/jett/jett-r.png" alt="jett-r"></span>
+                          </span>
+                        </button>
+                      </div>
                 </div>
                 <div class="skills-text">
                 <h2 id="jett-skill-name">Q - UPDRAFT</h2>
@@ -174,10 +320,38 @@
                 <p>Filipino Agent Neon surges forward at shocking speeds, discharging bursts of bioelectric radiance as fast as her body generates it. She races ahead to catch enemies off guard, then strikes them down quicker than lightning.</p>
                 <h1>SPECIAL SKILLS</h1>
                 <div class="skills">
-                    <img src="/pictures/agents/skills/neon/neon-q.png" alt="neon-q" onclick="neon_change_skill_q()">
-                    <img src="/pictures/agents/skills/neon/neon-w.png" alt="neon-w" onclick="neon_change_skill_w()"> 
-                    <img src="/pictures/agents/skills/neon/neon-e.png" alt="neon-e" onclick="neon_change_skill_e()">
-                    <img src="/pictures/agents/skills/neon/neon-r.png" alt="neon-r" onclick="neon_change_skill_r()">
+                    <div>
+                        <button class="btn btn--light" onclick="neon_change_skill_q()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/neon/neon-q.png" alt="neon-q"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="neon_change_skill_w()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/neon/neon-w.png" alt="neon-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="neon_change_skill_e()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/neon/neon-e.png" alt="neon-e"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="neon_change_skill_r()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/neon/neon-r.png" alt="neon-r"></span>
+                          </span>
+                        </button>
+                      </div>
                 </div>
                 <div class="skills-text">
                 <h2 id="neon-skill-name">Q - RELAY BOLT</h2>
@@ -203,10 +377,38 @@
                 <p>Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he's got backup or not, he'll rush into a fight on his own terms.</p>
                 <h1>SPECIAL SKILLS</h1>
                 <div class="skills">
-                    <img src="/pictures/agents/skills/phoenix/phoenix-q.png" alt="phoenix-q" onclick="phoenix_change_skill_q()">
-                    <img src="/pictures/agents/skills/phoenix/phoenix-w.png" alt="phoenix-w" onclick="phoenix_change_skill_w()"> 
-                    <img src="/pictures/agents/skills/phoenix/phoenix-e.png" alt="phoenix-e" onclick="phoenix_change_skill_e()">
-                    <img src="/pictures/agents/skills/phoenix/phoenix-r.png" alt="phoenix-r" onclick="phoenix_change_skill_r()">
+                    <div>
+                        <button class="btn btn--light" onclick="phoenix_change_skill_q()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/phoenix/phoenix-q.png" alt="phoenix-q"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="phoenix_change_skill_w()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/phoenix/phoenix-w.png" alt="phoenix-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="phoenix_change_skill_e()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/phoenix/phoenix-e.png" alt="phoenix-e"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="phoenix_change_skill_r()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/phoenix/phoenix-r.png" alt="phoenix-r"></span>
+                          </span>
+                        </button>
+                      </div>
                 </div>
                 <div class="skills-text">
                 <h2 id="phoenix-skill-name">Q - CURVEBALL</h2>
@@ -232,10 +434,38 @@
                 <p>Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle, she excels at flushing entrenched enemies and clearing tight spaces with a generous dose of “boom.”</p>
                 <h1>SPECIAL SKILLS</h1>
                 <div class="skills">
-                    <img src="/pictures/agents/skills/raze/raze-q.png" alt="raze-q" onclick="raze_change_skill_q()">
-                    <img src="/pictures/agents/skills/raze/raze-w.png" alt="raze-w" onclick="raze_change_skill_w()"> 
-                    <img src="/pictures/agents/skills/raze/raze-e.png" alt="raze-e" onclick="raze_change_skill_e()">
-                    <img src="/pictures/agents/skills/raze/raze-r.png" alt="raze-r" onclick="raze_change_skill_r()">
+                    <div>
+                        <button class="btn btn--light" onclick="raze_change_skill_q()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/raze/raze-q.png" alt="raze-q"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="raze_change_skill_w()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/raze/raze-w.png" alt="raze-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="raze_change_skill_e()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/raze/raze-e.png" alt="raze-e"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="raze_change_skill_r()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/raze/raze-r.png" alt="raze-r"></span>
+                          </span>
+                        </button>
+                      </div>
                 </div>
                 <div class="skills-text">
                 <h2 id="raze-skill-name">Q - BLAST PACK</h2>
@@ -261,10 +491,38 @@
                 <p>Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her highly dependent on performance.</p>
                 <h1>SPECIAL SKILLS</h1>
                 <div class="skills">
-                    <img src="/pictures/agents/skills/reyna/reyna-q.png" alt="reyna-q" onclick="reyna_change_skill_q()">
-                    <img src="/pictures/agents/skills/reyna/reyna-w.png" alt="reyna-w" onclick="reyna_change_skill_w()"> 
-                    <img src="/pictures/agents/skills/reyna/reyna-e.png" alt="reyna-e" onclick="reyna_change_skill_e()">
-                    <img src="/pictures/agents/skills/reyna/reyna-r.png" alt="reyna-r" onclick="reyna_change_skill_r()">
+                    <div>
+                        <button class="btn btn--light" onclick="reyna_change_skill_q()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/reyna/reyna-q.png" alt="reyna-q"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="reyna_change_skill_w()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/reyna/reyna-w.png" alt="reyna-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="reyna_change_skill_e()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/reyna/reyna-e.png" alt="reyna-e"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="reyna_change_skill_r()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/reyna/reyna-r.png" alt="reyna-r"></span>
+                          </span>
+                        </button>
+                      </div>
                 </div>
                 <div class="skills-text">
                 <h2 id="reyna-skill-name">Q - DEVOUR</h2>
@@ -290,10 +548,38 @@
                 <p>Japanese native, Yoru, rips holes straight through reality to infiltrate enemy lines unseen. Using deception and aggression in equal measure, he gets the drop on each target before they know where to look.</p>
                 <h1>SPECIAL SKILLS</h1>
                 <div class="skills">
-                    <img src="/pictures/agents/skills/yoru/yoru-q.png" alt="yoru-q" onclick="yoru_change_skill_q()">
-                    <img src="/pictures/agents/skills/yoru/yoru-w.png" alt="yoru-w" onclick="yoru_change_skill_w()"> 
-                    <img src="/pictures/agents/skills/yoru/yoru-q.png" alt="yoru-e" onclick="yoru_change_skill_e()">
-                    <img src="/pictures/agents/skills/yoru/yoru-r.png" alt="yoru-r" onclick="yoru_change_skill_r()">
+                    <div>
+                        <button class="btn btn--light" onclick="yoru_change_skill_q()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/yoru/yoru-q.png" alt="yoru-q"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="yoru_change_skill_w()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/yoru/yoru-w.png" alt="yoru-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="yoru_change_skill_e()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/yoru/yoru-e.png" alt="yoru-e"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="yoru_change_skill_r()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/yoru/yoru-r.png" alt="yoru-r"></span>
+                          </span>
+                        </button>
+                      </div>
                 </div>
                 <div class="skills-text">
                 <h2 id="yoru-skill-name">Q - BLINDSIDE</h2>
@@ -319,10 +605,38 @@
                 <p>Breach, the bionic Swede, fires powerful, targeted kinetic blasts to aggressively clear a path through enemy ground. The damage and disruption he inflicts ensures no fight is ever fair.</p>
                 <h1>SPECIAL SKILLS</h1>
                 <div class="skills">
-                    <img src="/pictures/agents/skills/breach/breach-q.png" alt="breach-q" onclick="breach_change_skill_q()" >
-                    <img src="/pictures/agents/skills/breach/breach-w.png" alt="breach-w" onclick="breach_change_skill_w()"> 
-                    <img src="/pictures/agents/skills/breach/breach-e.png" alt="breach-e" onclick="breach_change_skill_e()">
-                    <img src="/pictures/agents/skills/breach/breach-r.png" alt="breach-r" onclick="breach_change_skill_r()">
+                    <div>
+                        <button class="btn btn--light" onclick="breach_change_skill_q()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/breach/breach-q.png" alt="breach-q"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="breach_change_skill_w()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/breach/breach-w.png" alt="breach-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="breach_change_skill_e()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/breach/breach-e.png" alt="breach-e"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="breach_change_skill_r()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/breach/breach-r.png" alt="breach-r"></span>
+                          </span>
+                        </button>
+                      </div>
                 </div>
                 <div class="skills-text">
                 <h2 id="breach-skill-name">Q - FLASHPOINT</h2>
@@ -348,10 +662,38 @@
                 <p>Turkish bounty hunter, Fade, unleashes the power of raw nightmares to seize enemy secrets. Attuned with terror itself, she hunts targets and reveals their deepest fears—before crushing them in the dark.</p>
                 <h1>SPECIAL SKILLS</h1>
                 <div class="skills">
-                    <img src="/pictures/agents/skills/fade/fade-q.png" alt="fade-q" onclick="fade_change_skill_q()" >
-                    <img src="/pictures/agents/skills/fade/fade-w.png" alt="fade-w" onclick="fade_change_skill_w()"> 
-                    <img src="/pictures/agents/skills/fade/fade-e.png" alt="fade-e" onclick="fade_change_skill_e()">
-                    <img src="/pictures/agents/skills/fade/fade-r.png" alt="fade-r" onclick="fade_change_skill_r()">
+                    <div>
+                        <button class="btn btn--light" onclick="fade_change_skill_q()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/fade/fade-q.png" alt="fade-q"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="fade_change_skill_w()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/fade/fade-w.png" alt="fade-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="fade_change_skill_e()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/fade/fade-e.png" alt="fade-e"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="fade_change_skill_r()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/fade/fade-r.png" alt="fade-r"></span>
+                          </span>
+                        </button>
+                      </div>
                 </div>
                 <div class="skills-text">
                 <h2 id="fade-skill-name">Q - SEIZE</h2>
@@ -377,10 +719,38 @@
                 <p>KAY/O is a machine of war built for a single purpose: neutralizing radiants. His power to suppress enemy abilities cripples his opponents' capacity to fight back, securing him and his allies the ultimate edge.</p>
                 <h1>SPECIAL SKILLS</h1>
                 <div class="skills">
-                    <img src="/pictures/agents/skills/kayo/kayo-e.png" alt="kayo-q" onclick="kayo_change_skill_q()" >
-                    <img src="/pictures/agents/skills/kayo/kayo-w.png" alt="kayo-w" onclick="kayo_change_skill_w()"> 
-                    <img src="/pictures/agents/skills/kayo/kayo-q.png" alt="kayo-e" onclick="kayo_change_skill_e()">
-                    <img src="/pictures/agents/skills/kayo/kayo-r.png" alt="kayo-r" onclick="kayo_change_skill_r()">
+                    <div>
+                        <button class="btn btn--light" onclick="kayo_change_skill_q()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/kayo/kayo-q.png" alt="kayo-q"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="kayo_change_skill_w()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/kayo/kayo-w.png" alt="kayo-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="kayo_change_skill_e()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/kayo/kayo-e.png" alt="kayo-e"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="kayo_change_skill_r()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/kayo/kayo-r.png" alt="kayo-r"></span>
+                          </span>
+                        </button>
+                      </div>
                 </div>
                 <div class="skills-text">
                 <h2 id="kayo-skill-name">Q - FLASH/DRIVE</h2>
@@ -406,10 +776,38 @@
                 <p>Hailing from Australia, Skye and her band of beasts trail-blaze the way through hostile territory. With her creations hampering the enemy, and her power to heal others, the team is strongest and safest by Skye’s side.</p>
                 <h1>SPECIAL SKILLS</h1>
                 <div class="skills">
-                    <img src="/pictures/agents/skills/skye/skye-q.png" alt="skye-q" onclick="skye_change_skill_q()" >
-                    <img src="/pictures/agents/skills/skye/skye-w.png" alt="skye-w" onclick="skye_change_skill_w()"> 
-                    <img src="/pictures/agents/skills/skye/skye-e.png" alt="skye-e" onclick="skye_change_skill_e()">
-                    <img src="/pictures/agents/skills/skye/skye-r.png" alt="skye-r" onclick="skye_change_skill_r()">
+                    <div>
+                        <button class="btn btn--light" onclick="skye_change_skill_q()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/skye/skye-q.png" alt="skye-q"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="skye_change_skill_w()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/skye/skye-w.png" alt="skye-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="skye_change_skill_e()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/skye/skye-e.png" alt="skye-e"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="skye_change_skill_r()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/skye/skye-r.png" alt="skye-r"></span>
+                          </span>
+                        </button>
+                      </div>
                 </div>
                 <div class="skills-text">
                 <h2 id="skye-skill-name">Q - TRAILBLAZER</h2>
@@ -435,10 +833,38 @@
                 <p>Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide.</p>
                 <h1>SPECIAL SKILLS</h1>
                 <div class="skills">
-                    <img src="/pictures/agents/skills/sova/sova-q.png" alt="sova-q" onclick="sova_change_skill_q()" >
-                    <img src="/pictures/agents/skills/sova/sova-w.png" alt="sova-w" onclick="sova_change_skill_w()"> 
-                    <img src="/pictures/agents/skills/sova/sova-e.png" alt="sova-e" onclick="sova_change_skill_e()">
-                    <img src="/pictures/agents/skills/sova/sova-r.png" alt="sova-r" onclick="sova_change_skill_r()">
+                    <div>
+                        <button class="btn btn--light" onclick="sova_change_skill_q()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/sova/sova-q.png" alt="sova-q"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="sova_change_skill_w()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/sova/sova-w.png" alt="sova-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="sova_change_skill_e()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/sova/sova-e.png" alt="sova-e"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="sova_change_skill_r()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/sova/sova-r.png" alt="sova-r"></span>
+                          </span>
+                        </button>
+                      </div>
                 </div>
                 <div class="skills-text">
                 <h2 id="sova-skill-name">Q - SHOCK BOLT</h2>
@@ -464,10 +890,38 @@
                 <p>Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide.</p>
                 <h1>SPECIAL SKILLS</h1>
                 <div class="skills">
-                    <img src="/pictures/agents/skills/chamber/chamber-q.png" alt="chamber-q" onclick="chamber_change_skill_q()" >
-                    <img src="/pictures/agents/skills/chamber/chamber-w.png" alt="chamber-w" onclick="chamber_change_skill_w()"> 
-                    <img src="/pictures/agents/skills/chamber/chamber-e.png" alt="chamber-e" onclick="chamber_change_skill_e()">
-                    <img src="/pictures/agents/skills/chamber/chamber-r.png" alt="chamber-r" onclick="chamber_change_skill_r()">
+                    <div>
+                        <button class="btn btn--light" onclick="chamber_change_skill_q()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/chamber/chamber-q.png" alt="chamber-q"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="chamber_change_skill_w()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/chamber/chamber-w.png" alt="chamber-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="chamber_change_skill_e()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/chamber/chamber-e.png" alt="chamber-e"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="chamber_change_skill_r()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/chamber/chamber-r.png" alt="chamber-r"></span>
+                          </span>
+                        </button>
+                      </div>
                 </div>
                 <div class="skills-text">
                 <h2 id="chamber-skill-name">Q - HEADHUNTER</h2>
@@ -493,10 +947,38 @@
                 <p>The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on the enemy's every move. No secret is safe. No maneuver goes unseen. Cypher is always watching.</p>
                 <h1>SPECIAL SKILLS</h1>
                 <div class="skills">
-                    <img src="/pictures/agents/skills/cypher/cypher-q.png" alt="cypher-q" onclick="cypher_change_skill_q()" >
-                    <img src="/pictures/agents/skills/cypher/cypher-w.png" alt="cypher-w" onclick="cypher_change_skill_w()"> 
-                    <img src="/pictures/agents/skills/cypher/cypher-e.png" alt="cypher-e" onclick="cypher_change_skill_e()">
-                    <img src="/pictures/agents/skills/cypher/cypher-r.png" alt="cypher-r" onclick="cypher_change_skill_r()">
+                    <div>
+                        <button class="btn btn--light" onclick="cypher_change_skill_q()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/cypher/cypher-q.png" alt="cypher-q"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="cypher_change_skill_w()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/cypher/cypher-w.png" alt="cypher-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="cypher_change_skill_e()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/cypher/cypher-e.png" alt="cypher-e"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="cypher_change_skill_r()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/cypher/cypher-r.png" alt="cypher-r"></span>
+                          </span>
+                        </button>
+                      </div>
                 </div>
                 <div class="skills-text">
                 <h2 id="cypher-skill-name">Q - CYBER CAGE</h2>
@@ -522,10 +1004,38 @@
                 <p>The genius of Germany. Killjoy secures the battlefield with ease using her arsenal of inventions. If the damage from her gear doesn't stop her enemies, her robots' debuff will help make short work of them.</p>
                 <h1>SPECIAL SKILLS</h1>
                 <div class="skills">
-                    <img src="/pictures/agents/skills/killjoy/killjoy-q.png" alt="killjoy-q" onclick="killjoy_change_skill_q()" >
-                    <img src="/pictures/agents/skills/killjoy/killjoy-w.png" alt="killjoy-w" onclick="killjoy_change_skill_w()"> 
-                    <img src="/pictures/agents/skills/killjoy/killjoy-e.png" alt="killjoy-e" onclick="killjoy_change_skill_e()">
-                    <img src="/pictures/agents/skills/killjoy/killjoy-r.png" alt="killjoy-r" onclick="killjoy_change_skill_r()">
+                    <div>
+                        <button class="btn btn--light" onclick="killjoy_change_skill_q()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/killjoy/killjoy-q.png" alt="killjoy-q"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="killjoy_change_skill_w()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/killjoy/killjoy-w.png" alt="killjoy-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="killjoy_change_skill_e()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/killjoy/killjoy-e.png" alt="killjoy-e"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="killjoy_change_skill_r()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/killjoy/killjoy-r.png" alt="killjoy-r"></span>
+                          </span>
+                        </button>
+                      </div>
                 </div>
                 <div class="skills-text">
                 <h2 id="killjoy-skill-name">Q - ALARMBOT</h2>
@@ -551,10 +1061,38 @@
                 <p>The stronghold of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight.</p>
                 <h1>SPECIAL SKILLS</h1>
                 <div class="skills">
-                    <img src="/pictures/agents/skills/sage/sage-q.png" alt="sage-q" onclick="sage_change_skill_q()" >
-                    <img src="/pictures/agents/skills/sage/sage-w.png" alt="sage-w" onclick="sage_change_skill_w()"> 
-                    <img src="/pictures/agents/skills/sage/sage-e.png" alt="sage-e" onclick="sage_change_skill_e()">
-                    <img src="/pictures/agents/skills/sage/sage-r.png" alt="sage-r" onclick="sage_change_skill_r()">
+                    <div>
+                        <button class="btn btn--light" onclick="sage_change_skill_q()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/sage/sage-q.png" alt="sage-q"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="sage_change_skill_w()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/sage/sage-q.png" alt="sage-w"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="sage_change_skill_e()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/sage/sage-q.png" alt="sage-e"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn--light" onclick="sage_change_skill_r()">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content"><img src="/pictures/agents/skills/sage/sage-q.png" alt="sage-r"></span>
+                          </span>
+                        </button>
+                      </div>
                 </div>
                 <div class="skills-text">
                 <h2 id="sage-skill-name">Q - SLOW ORB</h2>
@@ -568,28 +1106,40 @@
             </div>
         </div>
     </div>
-
-
-
-
-
     </div>
     </div>
-
-
-
     </section>
+
     <div class="buttons">
-        <button class="slider-previous">PREVIOUS</button>
-        <button class="slider-next">NEXT</button>
+        <div>
+            <button class="btn slider-previous">
+              <span class="btn__inner">
+                <span class="btn__slide"></span>
+                <span class="btn__content">PREVIOUS</span>
+              </span>
+            </button>
+          </div>
+        <div>
+            <button class="btn slider-next">
+              <span class="btn__inner">
+                <span class="btn__slide"></span>
+                <span class="btn__content">NEXT</span>
+              </span>
+            </button>
+          </div>
     </div>
-        <div id="main-container">
+
+
+
+    <div id="main-container">
     <section id="agents-list">
         <div class="row-1">
             <div class="agent-class">
                 <h2>CONTROLLERS</h2>
-                <img src="/pictures/agents/icons/Controller.png" alt="Controller">
-                <p>Controllers are experts in slicing up dangerous territory to set their team up for success.</p>
+                <img src="/pictures/agents/icons/Controller.png" alt="Controller" onmouseover="show_text_1()" onmouseout="unshow_text_1()">
+                <div>
+                <p id="controllers-text"></p>
+                </div>
             </div>
             <a href="agentspages/astra.html"><img class="agent-icon" src="/pictures/agents/icons/Astra_icon.png" alt="Astra_icon"></a>
             <img class="agent-icon" src="/pictures/agents/icons/Brimstone_icon.png" alt="Brimstone_icon">
@@ -599,8 +1149,8 @@
         <div class="row-1">
             <div class="agent-class">
                 <h2>DUELISTS</h2>
-                <img src="/pictures/agents/icons/Duelist.png" alt="Duelist">
-                <p>Duelists are self-sufficient fraggers who their team expects, through abilities and skills, to get high frags and seek out engagements first.</p>
+                <img src="/pictures/agents/icons/Duelist.png" alt="Duelist" onmouseover="show_text_2()" onmouseout="unshow_text_2()">
+                <p id="duelists-text"></p>
             </div>
             <img class="agent-icon" src="/pictures/agents/icons/Jett_icon.png" alt="Jett_icon">
             <img class="agent-icon" src="/pictures/agents/icons/Neon_icon.png" alt="Neon_icon">
@@ -612,8 +1162,8 @@
         <div class="row-1">
             <div class="agent-class">
                 <h2>INITIATORS</h2>
-                <img src="/pictures/agents/icons/Initiator.png" alt="Initiator">
-                <p>Initiators challenge angles by setting up their team to enter contested ground and push defenders away.</p>
+                <img src="/pictures/agents/icons/Initiator.png" alt="Initiator" onmouseover="show_text_3()" onmouseout="unshow_text_3()">
+                <p id="initiators-text"></p>
             </div>
             <a href="agentspages/breach.html"><img class="agent-icon" src="/pictures/agents/icons/Breach_icon.png" alt="Breach_icon"></a>
             <img class="agent-icon" src="/pictures/agents/icons/Fade_icon.png" alt="Fade_icon">
@@ -624,14 +1174,15 @@
         <div class="row-1">
             <div class="agent-class">
                 <h2>SENTINELS</h2>
-                <img src="/pictures/agents/icons/Sentinel.png" alt="Sentinel">
-                <p>Sentinels are defensive experts who can lock down areas and watch flanks, both on attacker and defender rounds.</p>
+                <img src="/pictures/agents/icons/Sentinel.png" alt="Sentinel" onmouseover="show_text_4()" onmouseout="unshow_text_4()">
+                <p id="sentinels-text"></p>
             </div>
             <img class="agent-icon" src="/pictures/agents/icons/Chamber_icon.png" alt="Chamber_icon">
             <img class="agent-icon" src="/pictures/agents/icons/Cypher_icon.png" alt="Cypher_icon">
             <img class="agent-icon" src="/pictures/agents/icons/Killjoy_icon.png" alt="Killjoy_icon">
             <img class="agent-icon" src="/pictures/agents/icons/Sage_icon.png" alt="Sage_icon">
         </div>
+    </div>
     </section>
 
     <script src="/agents.js"></script>

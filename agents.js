@@ -41,15 +41,36 @@ function rollSlider(){
 
 
 
-// let options = {
-//     root: null,
-//     rootMargin: '0px',
-//     threshold: 1.0
-// };
 
-// let callback = (entries, observer)=>{
-//     entries.forEach(entry => {
-//         if(entry.target.)
-//     })
-// }
-// let observer = new IntersectionObserver(callback, options)
+
+function show_text_1 (){
+    document.getElementById("controllers-text").innerHTML = "Controllers are experts in slicing up dangerous territory to set their team up for success.";
+}
+
+function unshow_text_1 (){
+    document.getElementById("controllers-text").innerHTML = "";
+}
+
+function show_text_2 (){
+    document.getElementById("duelists-text").innerHTML = "Duelists are self-sufficient fraggers who their team expects, through abilities and skills, to get high frags and seek out engagements first.";
+}
+
+function unshow_text_2 (){
+    document.getElementById("duelists-text").innerHTML = "";
+}
+
+function show_text_3 (){
+    document.getElementById("initiators-text").innerHTML = "Initiators challenge angles by setting up their team to enter contested ground and push defenders away.";
+}
+
+function unshow_text_3 (){
+    document.getElementById("initiators-text").innerHTML = "";
+}
+
+function show_text_4 (){
+    document.getElementById("sentinels-text").innerHTML = "Sentinels are defensive experts who can lock down areas and watch flanks, both on attacker and defender rounds.";
+}
+
+function unshow_text_4 (){
+    document.getElementById("sentinels-text").innerHTML = "";
+}
