@@ -111,7 +111,7 @@ header {
     border-bottom: 2px solid #171717;
     transition: 0.3s;
   }
-  
+
   #sticky-nav {
     position: fixed;
     top: 0;
@@ -378,6 +378,10 @@ ARSENAL SECTION
   font-size: 30px;
 }
 
+.arsenal-link  {
+  text-decoration: none;
+  color: inherit;
+  }
 
 /*************************
 AGENTS SECTION
