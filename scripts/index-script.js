@@ -1,12 +1,10 @@
 
-var video = document.getElementsById("vid");
-var butn = document.getElementById("demo")
+var video = document.getElementById("vid");
 
 function Play() {
-    if(video.paused) {
-        video.play();
-      }
-      else{
-        video.pause();
-      }
+  video.play();
+}
+
+function Pause() {
+  video.pause();
 }
