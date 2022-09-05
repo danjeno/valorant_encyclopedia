@@ -665,7 +665,7 @@ Media Queries Styles
 **************************************/
 
 @media only screen and (max-width: 780px) {
-  .gameplay-video, .image-phantom, .arsenal-weapon-text, .fade-image, .chamber-image {
+  .gameplay-video, .image-phantom, .arsenal-weapon-text, .fade-image, .chamber-image, .video-btn {
     display: none;
   }
 }
