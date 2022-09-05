@@ -654,3 +654,21 @@ Media Queries Styles
     width: 50vw;
   }
 }
+
+@media only screen and (max-width: 350px) {
+  .about-info-header-text, .arsenal-info-header-text, .agents-info-header-text {
+    width: 250px;
+  }
+
+  .about-title-header, .arsenal-title-header, .agents-title-header {
+    text-align: center;
+    margin-left: 0;
+    font-size: 30px;
+  }
+
+.agents-title-header {
+  text-shadow: none;
+  color: #ff4655;
+}
+
+}
