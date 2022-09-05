@@ -12,7 +12,32 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>WEAPONS</h1>
+    <!-- <h1>WEAPONS</h1> -->
+    <header>
+      <nav id="sticky-nav">
+        <img
+          src="pictures/logos/valorant-logo.svg"
+          alt="logo image"
+          id="logo-image"
+        />
+
+        <p id="logo-text">Valorant encyclopedia</p>
+
+        <ul id="main-nav">
+          <li><a href="/pages/weapons.html">Arsenal</a></li>
+          <li><a href="/pages/agents.html">Agents</a></li>
+          <li><a href="#about">News</a></li>
+          <li>
+            <select name="languages" id="languages">
+              <option value="english">English</option>
+              <option value="latvian">Latviešu</option>
+              <option value="russian">Русский</option>
+              <option value="lithuanian">Lietuviu</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <div class="content-wrapper">
       <div class="weapon-card" onclick="changeStatsClassic()">
         <a href="#popup-article" class="weapon-card__card-link"></a>
