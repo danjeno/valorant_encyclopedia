@@ -49,17 +49,9 @@ header {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    /* position: relative;
-    padding-bottom: 56.25%; */
   }
   
-  #header-headline {
-    margin-top: 20px;
-    margin-left: 8.33%;
-    background: #fff;
-    padding: 10px;
-    max-width: 17%;
-  }
+ 
   
   #logo-text {
     float: left;
@@ -276,43 +268,57 @@ ABOUT SECTION
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  margin-bottom: 1vw;
 }
 
 .about-video-buttons {
   position: relative;
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 1vw;
+    justify-content: space-around;
+    margin-bottom: 2vw;
 }
+
 
 .video-btn {
-  background: #ff4655;
-  border-radius: 1px solid white;
-  border-radius: 10px;
-  box-shadow: #5E5DF0 0 10px 20px -10px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-family: 'Oswald', sans-serif;
+    text-decoration: none;
   font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  opacity: 1;
-  outline: 0 solid transparent;
-  padding: 8px 18px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: fit-content;
-  word-break: break-word;
-  border: 0;
+  color: #ff4655;
+  padding: 15px 30px;
+  border: 3px solid #ff4655;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #ece8e1;
+  margin-top: 2vw;
 }
 
-.video-btn:hover {
-  scale: 1.3;
-  transition: 0.6s;
+.video-btn::before,
+.video-btn::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: inherit;
+  transition: all .5s;
 }
+
+.video-btn::before {
+  top: -15px;
+  left: -15px;
+  border-width: 3px 0 0 3px;
+}
+
+.video-btn::after {
+  bottom: -15px;
+  right: -15px;
+  border-width: 0 3px 3px 0;
+}
+
+.video-btn:hover::before,
+.video-btn:hover::after {
+  width: calc(100% + 27px);
+  height: calc(100% + 27px);
+}
+
 /*************************
 ARSENAL SECTION
 *************************/
