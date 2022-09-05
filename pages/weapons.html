@@ -3,23 +3,357 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/styles/weapons.css" />
+    <script type="text/javascript" src="/weapons.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <section class="layout">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
-      <div>7</div>
-      <div>8</div>
-      <div>9</div>
-      <div>10</div>
-      <div>11</div>
-      <div>12</div>
-    </section>
+    <!-- <h1>WEAPONS</h1> -->
+    <header>
+      <nav id="sticky-nav">
+        <img
+          src="pictures/logos/valorant-logo.svg"
+          alt="logo image"
+          id="logo-image"
+        />
+
+        <p id="logo-text">Valorant encyclopedia</p>
+
+        <ul id="main-nav">
+          <li><a href="/pages/weapons.html">Arsenal</a></li>
+          <li><a href="/pages/agents.html">Agents</a></li>
+          <li><a href="#about">News</a></li>
+          <li>
+            <select name="languages" id="languages">
+              <option value="english">English</option>
+              <option value="latvian">Latviešu</option>
+              <option value="russian">Русский</option>
+              <option value="lithuanian">Lietuviu</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content-wrapper">
+      <div class="weapon-card" onclick="changeStatsClassic()">
+        <a href="#popup-article" class="weapon-card__card-link"></a>
+        <img
+          src="/pictures/weapons/sidearms/classic.png"
+          alt=""
+          class="weapon-card__image"
+        />
+        <div class="weapon-card__text-wrapper">
+          <h2 class="weapon-card__title">CLASSIC</h2>
+          <div class="weapon-card__post-date">CATEGORY: SIDEARMS</div>
+          <div class="weapon-card__details-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="weapon-card" onclick="changeStatsShorty()">
+        <a href="#popup-article" class="weapon-card__card-link"></a>
+        <img
+          src="/pictures/weapons/sidearms/shorty.png"
+          alt=""
+          class="weapon-card__image"
+        />
+        <div class="weapon-card__text-wrapper">
+          <h2 class="weapon-card__title">SHORTY</h2>
+          <div class="weapon-card__post-date">CATEGORY: SIDEARMS</div>
+          <div class="weapon-card__details-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="weapon-card" onclick="changeStatsFrenzy()">
+        <a href="#popup-article" class="weapon-card__card-link"></a>
+        <img
+          src="/pictures/weapons/sidearms/frenzy.png"
+          alt=""
+          class="weapon-card__image"
+        />
+        <div class="weapon-card__text-wrapper">
+          <h2 class="weapon-card__title">FRENZY</h2>
+          <div class="weapon-card__post-date">CATEGORY: SIDEARMS</div>
+          <div class="weapon-card__details-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="weapon-card" onclick="changeStatsGhost()">
+        <a href="#popup-article" class="weapon-card__card-link"></a>
+        <img
+          src="/pictures/weapons/sidearms/ghost.png"
+          alt=""
+          class="weapon-card__image"
+        />
+        <div class="weapon-card__text-wrapper">
+          <h2 class="weapon-card__title">GHOST</h2>
+          <div class="weapon-card__post-date">CATEGORY: SIDEARMS</div>
+          <div class="weapon-card__details-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="weapon-card" onclick="changeStatsSheriff()">
+        <a href="#popup-article" class="weapon-card__card-link"></a>
+        <img
+          src="/pictures/weapons/sidearms/sheriff.png"
+          alt=""
+          class="weapon-card__image"
+        />
+        <div class="weapon-card__text-wrapper">
+          <h2 class="weapon-card__title">SHERIFF</h2>
+          <div class="weapon-card__post-date">CATEGORY: SIDEARMS</div>
+          <div class="weapon-card__details-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="weapon-card" onclick="changeStatsStinger()">
+        <a href="#popup-article" class="weapon-card__card-link"></a>
+        <img
+          src="/pictures/weapons/smgs/stinger.png"
+          alt=""
+          class="weapon-card__image"
+        />
+        <div class="weapon-card__text-wrapper">
+          <h2 class="weapon-card__title">STINGER</h2>
+          <div class="weapon-card__post-date">CATEGORY: SMGS</div>
+          <div class="weapon-card__details-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="weapon-card" onclick="changeStatsSpectre()">
+        <a href="#popup-article" class="weapon-card__card-link"></a>
+        <img
+          src="/pictures/weapons/smgs/spectre.png"
+          alt=""
+          class="weapon-card__image"
+        />
+        <div class="weapon-card__text-wrapper">
+          <h2 class="weapon-card__title">SPECTRE</h2>
+          <div class="weapon-card__post-date">CATEGORY: SMGS</div>
+          <div class="weapon-card__details-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="weapon-card" onclick="changeStatsBucky()">
+        <a href="#popup-article" class="weapon-card__card-link"></a>
+        <img
+          src="/pictures/weapons/shotguns/bucky.png"
+          alt=""
+          class="weapon-card__image"
+        />
+        <div class="weapon-card__text-wrapper">
+          <h2 class="weapon-card__title">BUCKY</h2>
+          <div class="weapon-card__post-date">CATEGORY: SHOTGUNS</div>
+          <div class="weapon-card__details-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="weapon-card" onclick="changeStatsJudge()">
+        <a href="#popup-article" class="weapon-card__card-link"></a>
+        <img
+          src="/pictures/weapons/shotguns/judge.png"
+          alt=""
+          class="weapon-card__image"
+        />
+        <div class="weapon-card__text-wrapper">
+          <h2 class="weapon-card__title">JUDGE</h2>
+          <div class="weapon-card__post-date">CATEGORY: SHOTGUNS</div>
+          <div class="weapon-card__details-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="weapon-card" onclick="changeStatsAres()">
+        <a href="#popup-article" class="weapon-card__card-link"></a>
+        <img
+          src="/pictures/weapons/machineguns/ares.png"
+          alt=""
+          class="weapon-card__image"
+        />
+        <div class="weapon-card__text-wrapper">
+          <h2 class="weapon-card__title">ARES</h2>
+          <div class="weapon-card__post-date">CATEGORY: MACHINE GUNS</div>
+          <div class="weapon-card__details-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="weapon-card" onclick="changeStatsOdin()">
+        <a href="#popup-article" class="weapon-card__card-link"></a>
+        <img
+          src="/pictures/weapons/machineguns/odin.png"
+          alt=""
+          class="weapon-card__image"
+        />
+        <div class="weapon-card__text-wrapper">
+          <h2 class="weapon-card__title">ODIN</h2>
+          <div class="weapon-card__post-date">CATEGORY: MACHINE GUNS</div>
+          <div class="weapon-card__details-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="weapon-card" onclick="changeStatsMarshal()">
+        <a href="#popup-article" class="weapon-card__card-link"></a>
+        <img
+          src="/pictures/weapons/sniper/marshal.png"
+          alt=""
+          class="weapon-card__image"
+        />
+        <div class="weapon-card__text-wrapper">
+          <h2 class="weapon-card__title">MARSHAL</h2>
+          <div class="weapon-card__post-date">CATEGORY: SNIPER RIFLES</div>
+          <div class="weapon-card__details-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="weapon-card" onclick="changeStatsOperator()">
+        <a href="#popup-article" class="weapon-card__card-link"></a>
+        <img
+          src="/pictures/weapons/sniper/operator.png"
+          alt=""
+          class="weapon-card__image"
+        />
+        <div class="weapon-card__text-wrapper">
+          <h2 class="weapon-card__title">OPERATOR</h2>
+          <div class="weapon-card__post-date">CATEGORY: SNIPER RIFLES</div>
+          <div class="weapon-card__details-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="weapon-card" onclick="changeStatsBulldog()">
+        <a href="#popup-article" class="weapon-card__card-link"></a>
+        <img
+          src="/pictures/weapons/rifles/bulldog.png"
+          alt=""
+          class="weapon-card__image"
+        />
+        <div class="weapon-card__text-wrapper">
+          <h2 class="weapon-card__title">BULLDOG</h2>
+          <div class="weapon-card__post-date">CATEGORY: RIFLES</div>
+          <div class="weapon-card__details-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="weapon-card" onclick="changeStatsGuardian()">
+        <a href="#popup-article" class="weapon-card__card-link"></a>
+        <img
+          src="/pictures/weapons/rifles/guardian.png"
+          alt=""
+          class="weapon-card__image"
+        />
+        <div class="weapon-card__text-wrapper">
+          <h2 class="weapon-card__title">GUARDIAN</h2>
+          <div class="weapon-card__post-date">CATEGORY: RIFLES</div>
+          <div class="weapon-card__details-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="weapon-card" onclick="changeStatsPhantom()">
+        <a href="#popup-article" class="weapon-card__card-link"></a>
+        <img
+          src="/pictures/weapons/rifles/phantom.png"
+          alt=""
+          class="weapon-card__image"
+        />
+        <div class="weapon-card__text-wrapper">
+          <h2 class="weapon-card__title">PHANTOM</h2>
+          <div class="weapon-card__post-date">CATEGORY: RIFLES</div>
+          <div class="weapon-card__details-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="weapon-card" onclick="changeStatsVandal()">
+        <a href="#popup-article" class="weapon-card__card-link"></a>
+        <img
+          src="/pictures/weapons/rifles/vandal.png"
+          alt=""
+          class="weapon-card__image"
+        />
+        <div class="weapon-card__text-wrapper">
+          <h2 class="weapon-card__title">VANDAL</h2>
+          <div class="weapon-card__post-date">CATEGORY: RIFLES</div>
+          <div class="weapon-card__details-wrapper"></div>
+        </div>
+      </div>
+    </div>
+    <div id="popup-article" class="popup">
+      <div class="popup__container">
+        <a href="#" class="popup__close">
+          <span class="screen-reader">close</span>
+        </a>
+        <div class="popup__content">
+          <h1 class="popup__title r-title" id="popup-header">CLASSIC</h1>
+          <div class="content">
+            <div class="info-card">
+              <div class="info">
+                <div class="info-item">
+                  <div class="summary">
+                    <span class="title">FIRE RATE</span>
+                    <span class="value" id="popup-firerate-value">6.75</span>
+                  </div>
+                  <div class="slider">
+                    <span id="fire-rate" class="progress"></span>
+                    <!-- <script>
+                      document.getElementById("fire-rate").style.width =
+                        "60.75%";
+                    </script> -->
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="summary">
+                    <span class="title">RUN SPEED</span>
+                    <span class="value" id="popup-runspeed-value">5.73</span>
+                  </div>
+                  <div class="slider">
+                    <span id="run-speed" class="progress"></span>
+                    <!-- <script>
+                      document.getElementById("run-speed").style.width =
+                        "50.73%";
+                    </script> -->
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="summary">
+                    <span class="title">RELOAD SPEED</span>
+                    <span class="value" id="popup-reloadspeed-value">1.75</span>
+                  </div>
+                  <div class="slider">
+                    <span id="reload-speed" class="progress"></span>
+                    <!-- <script>
+                      document.getElementById("reload-speed").style.width =
+                        "10.75%";
+                    </script> -->
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="summary">
+                    <span class="title">MAGAZINE</span>
+                    <span class="value" id="popup-magazine-value">12</span>
+                  </div>
+                  <div class="slider">
+                    <span id="magazine" class="progress"></span>
+                    <!-- <script>
+                      document.getElementById("magazine").style.width = "12%";
+                    </script> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="stats-container">
+      <div class="WEAPON-NAME">WEAPON-NAME PLACEHOLDER</div>
+      <div class="FIRE-RATE">FIRE-RATE PLACEHOLDER</div>
+      <div class="EQUIP-SPEED">EQUIP-SPEED PLACEHOLDER</div>
+      <div class="RUN-SPEED">RUN-SPEED PLACEHOLDER</div>
+      <div class="FIRST-SHOT-SPREAD">FIRST-SHOT-SPREAD PLACEHOLDER</div>
+      <div class="RELOAD-SPEED">RELOAD-SPEED PLACEHOLDER</div>
+      <div class="MAGAZINE">MAGAZINE PLACEHOLDER</div>
+      <div class="DAMAGE">DAMAGE PLACEHOLDER</div>
+    </div> -->
   </body>
 </html>
