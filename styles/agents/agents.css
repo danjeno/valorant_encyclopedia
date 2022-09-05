@@ -50,7 +50,7 @@ p {
     overflow-y: hidden;
     /* animation-name: openagentpage;
     animation-duration: 2s; */
-    box-shadow: inset 0px 0px 30px 0px #ff4b50;
+    box-shadow: inset 0px 0px 10px 0px #ff4b50;
 }
 
 @keyframes openagentpage {
@@ -73,7 +73,7 @@ p {
 
 .agent-info h1 {
     margin: 0;
-    font-size: 2.5vw;
+    font-size: calc(20px + 1.46vw);
     height: 15%;
     text-shadow: 2px 2px #ff4b50;
 }
@@ -89,11 +89,11 @@ p {
 }
 
 .agent-picture h1 {
-    font-size: 4vw;
+    font-size: calc(20px + 1.46vw);
 
 }
 .agent {
-    width: 18.2vw;
+    width: calc(120px + 12vw);
     margin: auto;
     transition: 0.1s ease-in-out;
 }
@@ -110,6 +110,8 @@ transform: scale(1.2);
     margin-right: 0.5vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 35vw;
     height: fit-content;
@@ -117,7 +119,7 @@ transform: scale(1.2);
 
 .bio-skills p{
     margin-top: 0;
-    font-size: calc(6px + 1.25vw)
+    font-size: calc(12px + 0.625vw)
 }
 
 .skills {
@@ -129,22 +131,18 @@ transform: scale(1.2);
 }
 
 .skills img {
-    width: 3.25vw;
-    /* padding: 0.25vw;
-    border: 0.15vw solid #ece8e1;
-    border-radius: 0.5vw;
-    cursor: pointer; */
+    width: calc(30px + 1.6vw);
 }
 
 .bio-skills h2{
     text-shadow: 1px 1px #ff4b50;
-    font-size: 1.8vw;
+    font-size: calc(20px + 1.46vw);
     margin: 0px;
 }
 
 .skills-text p {
     margin: 0.25vw;
-    font-size: calc(6px + 1.1vw);
+    font-size: calc(12px + 0.625vw);
 }
 
 .skills-text{
@@ -212,7 +210,7 @@ box-shadow: 10px 5px 5px #ff4b50;
     position: relative;
     width: 80vw;
     margin: auto;
-    height: 65vw;
+    height: 100%;
     border-left: 1px solid #ff4b50;
     border-right: 1px solid #ff4b50;
     box-shadow: inset 0px 1vw 0px 0px #ff4b50;
@@ -234,6 +232,7 @@ box-shadow: 10px 5px 5px #ff4b50;
 
 #agents-list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .row-1 {
@@ -248,26 +247,36 @@ box-shadow: 10px 5px 5px #ff4b50;
 
 .agent-class{
     width: 14.06vw;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .agent-class img {
+    align-self: center;
     margin-bottom: 0px;
     opacity: 1;
-    width: 5.7vw;
+    width: calc(80px + 1.56vw);
     -webkit-filter: drop-shadow(2px 2px 2px #ff4b50);
     filter: drop-shadow(2px 2px 2px #ff4b50);
 }
 
-.agent-class h2 {
+.agent-name h2 {
     color:#ece8e1;
-    font-size: 2.08vw;
+    font-size: calc(24px + 0.83vw);
     text-shadow: 1px 1px #ff4b50;
     text-align: center;
 }
 
-.agent-class p {
-    font-size: calc(4px + 1.1vw);
+
+
+.text{
+    width: 20vw;
+}
+
+.text p {
+    font-size: calc(16px + 0.46vw);
     background-color: #1c252e;
 }
 
@@ -306,12 +315,58 @@ box-shadow: 10px 5px 5px #ff4b50;
 
 .agent-icon{
     opacity: 0.8;
-    width: 5.2vw;
+    width: calc(70px + 1.56vw);
     border: 3px solid #ece8e1 ;
-    border-radius: 2.6vw;
+    border-radius: 50%;
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
     box-shadow: 2px 2px 2px #ff4b50;
 }
 
 
+@media only screen and (max-width: 1024px) {
+.row-1{
+    width: 40vw;    
+}
+.text{
+    width: 38vw;
+}
+}
+
+@media only screen and (max-width: 768px) {
+    video {
+        display: none;
+    }
+    .agent-picture {
+        width: 40vw;
+    }
+
+    .bio-skills {
+        width: 60vw;
+    }
+    .video-container {
+        width: 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .agent-info {
+        flex-direction: column;
+    }
+    .agent-picture {
+        width: 100vw;
+    }
+    .bio-skills {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 416px) {
+.row-1{
+    width: 80vw;
+}
+.text{
+    width: 75vw;
+}
+}
+    
