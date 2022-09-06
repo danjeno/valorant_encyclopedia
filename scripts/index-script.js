@@ -1,4 +1,4 @@
-
+// FOT PLAY AND PAUSE BUTTONS
 var video = document.getElementById("vid");
 
 function Play() {
