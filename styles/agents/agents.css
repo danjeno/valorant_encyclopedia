@@ -1,0 +1,477 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1vw;
+  font-weight: 600;
+    background-color: #1c252e;
+    font-family: 'Alumni Sans Pinstripe',  sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 8px; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: none; /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #08090c; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 1px solid #ff4655; /* creates padding around scroll thumb */
+  }
+  
+  body::-webkit-scrollbar-track-piece:start {
+    background-color: #1c242e;
+  }
+  
+  body::-webkit-scrollbar-track-piece:end {
+    background-color: #1c242e;
+  }
+
+
+
+
+p {
+    font-family: 'Alumni Sans Pinstripe',  sans-serif;
+    color: #ece8e1;
+}
+
+#header { 
+    height: 7.5vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Oswald', sans-serif;
+  }
+
+
+#logo-text {
+    float: left;
+  }
+
+  #logo-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  #main-nav {
+    float: right;
+    list-style: none;
+  }
+
+  #main-nav li {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: calc(12px + 0.42vw);
+  }
+  #main-nav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #171717;
+  }
+
+  #main-nav li a:link,
+  #main-nav li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #171717;
+    opacity: 0.7;
+  }
+
+  #main-nav li a:hover,
+  #main-nav li a:active {
+    opacity: 1;
+  }
+
+  #sticky-nav #main-nav li a:hover,
+  #sticky-nav #main-nav li a:active {
+    opacity: 1;
+    border-bottom: 2px solid #171717;
+    transition: 0.3s;
+  }
+
+  #sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 999;
+    box-shadow: 0 2px 2px #eae3e3;
+  }
+
+    #logo-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  #sticky-nav #main-nav li a:link,
+  #sticky-nav #main-nav li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #171717;
+    opacity: 0.7s;
+    transition: opacity 0.5s;
+  }
+
+  #sticky-nav #logo-text {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #171717;
+    letter-spacing: 6px;
+    padding-left: 25px;
+    margin-left: 30px;
+  }
+
+  #logo-text  {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #171717;
+    font-size: calc(15px + 0.42vw);
+    letter-spacing: 8px;
+    padding-left: 30px;
+    margin-left: 50px;
+  }
+
+  nav {
+    background: #fff;
+  }
+#languages {
+    font-family: 'Oswald', sans-serif;
+    color: gray;
+    border: 1px solid #fff;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.agent-wrapper {
+    overflow: hidden;
+}
+
+.agent-info{
+    position: relative;
+    margin-top: 8vh;
+    max-width: 100vw;
+    border-bottom: 1px solid #ff4b50;
+    border-top: 1px solid #ff4b50;
+    display: flex;
+    font-family: "Oswald", sans-serif;
+    color: #ece8e1;
+    overflow-y: hidden;
+    box-shadow: inset 0px 0px 10px 0px #ff4b50;
+}
+
+@keyframes openagentpage {
+    0%   {max-height: 0vh;}
+    100% {max-height: 80vh;}
+}
+
+.agent-info:before {
+  content: "";
+  background-image: url("/pictures/agents/pics/background4.jpg");
+  background-size: 1920px 1080px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.agent-info h1 {
+    margin: 0;
+    font-size: calc(20px + 1.46vw);
+    height: 15%;
+    text-shadow: 2px 2px #ff4b50;
+}
+
+.agent-picture{
+    font-family: "Oswald", sans-serif;
+    color: #ece8e1;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    text-align: center;
+
+}
+
+.agent-picture h1 {
+    font-size: calc(20px + 1.46vw);
+
+}
+.agent {
+    width: calc(120px + 12vw);
+    margin: auto;
+    transition: 0.1s ease-in-out;
+}
+
+.agent:hover {
+    -webkit-filter: drop-shadow(2px 2px 0 #ff4b50)
+    drop-shadow(-2px -2px 0 #ece8e1);
+filter: drop-shadow(2px 2px 0 #ff4b50) 
+drop-shadow(-2px -2px 0 #ece8e1);
+transform: scale(1.2);
+}
+
+.bio-skills {
+    margin-right: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 35vw;
+    height: fit-content;
+}
+
+.bio-skills p{
+    margin-top: 0;
+    font-size: calc(12px + 0.625vw)
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.8vw;
+    margin-bottom: 1.05vw;
+    z-index: 2;
+}
+
+.skills img {
+    width: calc(30px + 1.6vw);
+}
+
+.bio-skills h2{
+    text-shadow: 1px 1px #ff4b50;
+    font-size: calc(20px + 1.46vw);
+    margin: 0px;
+}
+
+.skills-text p {
+    margin: 0.25vw;
+    font-size: calc(12px + 0.625vw);
+}
+
+.skills-text{
+    transition: all 0.2s;
+    height: 18vh;
+}
+
+.skills-text.pre-animation{
+    opacity: 0;
+}
+
+
+
+
+.video-container {
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    margin: auto;
+    margin-right: 2vw;
+ 
+}
+
+
+
+.container.pre-animation {
+    opacity: 0;
+}
+
+video {
+width: 90%;
+height: auto;
+border: 3px solid #ece8e1;
+border-radius: 3.6vw 1vw;
+box-shadow: 10px 5px 5px #ff4b50;
+}
+
+
+.slider {
+    max-width: 100vw;
+    overflow: hidden;
+}
+.slider-line {
+    display: flex;
+    transition: all ease 1s;
+    overflow-x: hidden;
+}
+
+
+
+
+
+.buttons{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5vw;
+}
+
+
+
+#main-container {
+    position: relative;
+    width: 80vw;
+    margin: auto;
+    height: 100%;
+    border-left: 1px solid #ff4b50;
+    border-right: 1px solid #ff4b50;
+    box-shadow: inset 0px 1vw 0px 0px #ff4b50;
+    
+}
+
+#main-container:before {
+        content: "";
+        background-image: url("/pictures/agents/pics/background2.JPG");
+        background-size: 1920px 1080px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        opacity: 0.2;
+}
+
+#agents-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-1 {
+    width: 20vw;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.agent-class{
+    width: 14.06vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.agent-class img {
+    align-self: center;
+    margin-bottom: 0px;
+    opacity: 1;
+    width: calc(80px + 1.56vw);
+    -webkit-filter: drop-shadow(2px 2px 2px #ff4b50);
+    filter: drop-shadow(2px 2px 2px #ff4b50);
+}
+
+.agent-name h2 {
+    color:#ece8e1;
+    font-size: calc(24px + 0.83vw);
+    text-shadow: 1px 1px #ff4b50;
+    text-align: center;
+}
+
+
+
+.text{
+    width: 20vw;
+}
+
+.text p {
+    font-size: calc(16px + 0.46vw);
+    background-color: #1c252e;
+}
+
+
+.agent-icon{
+    opacity: 0.8;
+    width: calc(70px + 1.56vw);
+    border: 3px solid #ece8e1 ;
+    border-radius: 50%;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    box-shadow: 2px 2px 2px #ff4b50;
+    transition: all 0.2s ease-in-out;
+}
+
+.agent-icon:hover {
+    transform: scale(1.1);
+    background-color: #ff4b50;
+}
+
+
+@media only screen and (max-width: 1024px) {
+.row-1{
+    width: 40vw;    
+}
+.text{
+    width: 38vw;
+}
+}
+
+@media only screen and (max-width: 768px) {
+    video {
+        display: none;
+    }
+    .agent-picture {
+        width: 40vw;
+    }
+
+    .bio-skills {
+        width: 60vw;
+    }
+    .video-container {
+        width: 0;
+    }
+}
+
+@media only screen and (max-width: 698px) {
+    header{
+        height: 11.5vh;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .agent-info {
+        flex-direction: column;
+    }
+    .agent-picture {
+        width: 100vw;
+    }
+    .bio-skills {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 416px) {
+.row-1{
+    width: 80vw;
+}
+.text{
+    width: 75vw;
+}
+}
+    
