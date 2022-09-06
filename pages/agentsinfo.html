@@ -14,7 +14,32 @@
     <link rel="stylesheet" href="/styles/agents/agents_buttons.css" />
   </head>
   <body>
+    
     <div class="main">
+      <header>
+      <nav id="sticky-nav">
+        <a href="#header"><img src="pictures/logos/valorant-logo.svg" alt="logo image" id="logo-image"></a>
+
+        <a href="#header"><p id="logo-text">Valorant encyclopedia</p></a>
+
+        <ul id="main-nav">
+
+          <li><a href="/pages/weapons.html">Arsenal</a></li>
+          <li><a href="/pages/agents.html">Agents</a></li>
+          <li><a href="#about">News</a></li>
+          <li>
+                <select name="languages" id="languages">
+                  <option value="english">English</option>
+                  <option value="latvian">Latviešu</option>
+                  <option value="russian">Русский</option>
+                  <option value="lithuanian">Lietuviu</option>
+                </select>
+          </li>
+        </ul>
+
+      </nav>
+    </header>
+
     <section id="agents-info-wrapper">
         <div class="slider">
         <div class="slider-line">
@@ -1138,7 +1163,7 @@
                 <h2>CONTROLLERS</h2>
             </div>
             <div class="agent-class">
-                <img src="/pictures/agents/icons/Controller.png" alt="Controller" onmouseover="show_text_1()" >
+                <img src="/pictures/agents/icons/Controller.png" alt="Controller" onmouseover="show_text_1()" onmouseout="unshow_text_1()">
                 <!-- onmouseout="unshow_text_1()" -->
             </div>
             <div class="text">

@@ -9,24 +9,34 @@ html, body {
 body {
   font-size: 1vw;
   font-weight: 600;
-  /* position: absolute;
-  background: rgb(14, 24, 35);
-  background: radial-gradient(
-    circle,
-    rgba(14, 24, 35, 1) 35%,
-    rgb(2, 1, 18) 100% */
     background-color: #1c252e;
-
-
+    font-family: 'Alumni Sans Pinstripe',  sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
-/* body:before {
-    content: "";
-    position: relative;
-    background-image: url("/pictures/agents/pics/background2.JPG");
-    background-size: 1920px 1080x;
-    opacity: 0.1;
-} */
+body::-webkit-scrollbar {
+    width: 8px; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: none; /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #08090c; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 1px solid #ff4655; /* creates padding around scroll thumb */
+  }
+  
+  body::-webkit-scrollbar-track-piece:start {
+    background-color: #1c242e;
+  }
+  
+  body::-webkit-scrollbar-track-piece:end {
+    background-color: #1c242e;
+  }
+
+
 
 
 p {
@@ -34,22 +44,136 @@ p {
     color: #ece8e1;
 }
 
+#header { 
+    height: 7.5vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Oswald', sans-serif;
+  }
 
 
+#logo-text {
+    float: left;
+  }
 
+  #logo-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  #main-nav {
+    float: right;
+    list-style: none;
+  }
+
+  #main-nav li {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: calc(12px + 0.42vw);
+  }
+  #main-nav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #171717;
+  }
+
+  #main-nav li a:link,
+  #main-nav li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #171717;
+    opacity: 0.7;
+  }
+
+  #main-nav li a:hover,
+  #main-nav li a:active {
+    opacity: 1;
+  }
+
+  #sticky-nav #main-nav li a:hover,
+  #sticky-nav #main-nav li a:active {
+    opacity: 1;
+    border-bottom: 2px solid #171717;
+    transition: 0.3s;
+  }
+
+  #sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 999;
+    box-shadow: 0 2px 2px #eae3e3;
+  }
+
+    #logo-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  #sticky-nav #main-nav li a:link,
+  #sticky-nav #main-nav li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #171717;
+    opacity: 0.7s;
+    transition: opacity 0.5s;
+  }
+
+  #sticky-nav #logo-text {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #171717;
+    letter-spacing: 6px;
+    padding-left: 25px;
+    margin-left: 30px;
+  }
+
+  #logo-text  {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #171717;
+    font-size: calc(15px + 0.42vw);
+    letter-spacing: 8px;
+    padding-left: 30px;
+    margin-left: 50px;
+  }
+
+  nav {
+    background: #fff;
+  }
+#languages {
+    font-family: 'Oswald', sans-serif;
+    color: gray;
+    border: 1px solid #fff;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.agent-wrapper {
+    overflow: hidden;
+}
 
 .agent-info{
     position: relative;
+    margin-top: 8vh;
     max-width: 100vw;
-    /* border-top: 1px solid #ff4b50; */
     border-bottom: 1px solid #ff4b50;
     border-top: 1px solid #ff4b50;
     display: flex;
     font-family: "Oswald", sans-serif;
     color: #ece8e1;
     overflow-y: hidden;
-    /* animation-name: openagentpage;
-    animation-duration: 2s; */
     box-shadow: inset 0px 0px 10px 0px #ff4b50;
 }
 
@@ -147,6 +271,7 @@ transform: scale(1.2);
 
 .skills-text{
     transition: all 0.2s;
+    height: 18vh;
 }
 
 .skills-text.pre-animation{
@@ -281,38 +406,6 @@ box-shadow: 10px 5px 5px #ff4b50;
 }
 
 
-/* 
-.contr-animation1 {
-    animation-name: slideIn;
-    animation-name: divExpand;
-    animation-duration: 2s;
-}
-
-.contr-animation2 {
-
-}
-
-@keyframes appear {
-    0%
-    {
-        opacity: 0;
-    }
-    100%
-    {
-        opacity: 1
-    }
-}
-
-@keyframes divExpand {
-    0% {
-        height: 0;
-    }
-    100% {
-        height: 25vh;
-    }
-} */
-
-
 .agent-icon{
     opacity: 0.8;
     width: calc(70px + 1.56vw);
@@ -321,6 +414,12 @@ box-shadow: 10px 5px 5px #ff4b50;
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
     box-shadow: 2px 2px 2px #ff4b50;
+    transition: all 0.2s ease-in-out;
+}
+
+.agent-icon:hover {
+    transform: scale(1.1);
+    background-color: #ff4b50;
 }
 
 
@@ -346,6 +445,12 @@ box-shadow: 10px 5px 5px #ff4b50;
     }
     .video-container {
         width: 0;
+    }
+}
+
+@media only screen and (max-width: 698px) {
+    header{
+        height: 11.5vh;
     }
 }
 

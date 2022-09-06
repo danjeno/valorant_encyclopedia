@@ -29,7 +29,7 @@
     margin-bottom: 1.05vw;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 0.9vw;
+    font-size: calc(13px + 0.67vw);
     transition: all .15s ease;
   }
   
