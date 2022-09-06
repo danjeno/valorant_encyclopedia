@@ -166,8 +166,6 @@ header {
      cursor:pointer;  
 }
 
-.vjs-control-bar { display:none!important; }
-
 #languages {
     font-family: 'Oswald', sans-serif;
     color: gray;
